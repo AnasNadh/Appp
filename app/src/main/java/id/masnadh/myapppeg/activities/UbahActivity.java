@@ -12,6 +12,7 @@ import android.os.Parcelable;
 import android.renderscript.Sampler;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -98,10 +99,69 @@ public class UbahActivity extends AppCompatActivity {
         etTmpLhr = (EditText) findViewById(R.id.edLahir);
         etAlamat = (EditText) findViewById(R.id.edtAlamat);
         edKepeg = (Spinner) findViewById(R.id.edStatusKepeg);
+        edKepeg.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         edAgama = (Spinner) findViewById(R.id.edtAgama);
+        edAgama.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         edJk = (Spinner) findViewById(R.id.edtJk);
+        edJk.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         edGolda = (Spinner) findViewById(R.id.edtGolDarah);
+        edGolda.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         edNikah = (Spinner) findViewById(R.id.edtNikah);
+        edNikah.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
     }
@@ -125,18 +185,22 @@ public class UbahActivity extends AppCompatActivity {
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
                                 String alamat = obj.getString("alamat");
-                                String ktp = obj.getString("ktp");
+//                                String ktp = obj.getString("ktp");
                                 String tempat = obj.getString("tempat_lhr");
+                                String tgl = obj.getString("tgl_lhr");
 
                               if(extraId==id)
                                 {
 
-//                                    idUser.setText(id_peg);
-//                                    EdnamaUser.setText(nama);
-////                                    Edtmplahir.setText(tempatLahir);
-////                                    Edtgllahir.setText(tanggalLahir);
-////                                    TvkodeKelas.setText(kodekelas);
-////                                    Tvjurusan.setText(jurusanS);
+                                    etNama.setText(nama);
+                                    etTmpLhr.setText(tempat);
+                                    etTglLhr.setText(tgl);
+//                                    etNip.setText(nip);
+                                    etNuptk.setText(nuptk);
+                                    etAlamat.setText(alamat);
+
+                                    etKtp.setText(obj.getString("ktp"));
+
 
 //                                    String code = obj.getString("code");
 //                                    if (code.equals("sukses"))
@@ -204,6 +268,16 @@ public class UbahActivity extends AppCompatActivity {
                 map.put("nama", etNama.getText().toString());
                 map.put("tempat_lahir", etTmpLhr.getText().toString());
                 map.put("tanggal_lahir", etTglLhr.getText().toString());
+                map.put("jk", String.valueOf(edJk.getSelectedItem()));
+                map.put("agama", String.valueOf(edAgama.getSelectedItem()));
+                map.put("status_kepeg", String.valueOf(edKepeg.getSelectedItem()));
+                map.put("gol_darah", String.valueOf(edGolda.getSelectedItem()));
+                map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
+                map.put("ktp", etKtp.getText().toString());
+                map.put("nuptk", etNuptk.getText().toString());
+//                map.put("nip", etNip.getText().toString());
+                map.put("alamat", etAlamat.getText().toString());
+
                 // params.put("tahun_nmasuk", thnmasuk.getText().toString());
 
                 return map;
