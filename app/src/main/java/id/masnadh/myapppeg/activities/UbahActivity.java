@@ -91,7 +91,7 @@ public class UbahActivity extends AppCompatActivity {
         });
 
         etNama = (EditText) findViewById(R.id.edNama);
-        etNip = (EditText) findViewById(R.id.edt_nip);
+        etNip = (EditText) findViewById(R.id.edNip);
         etNuptk = (EditText) findViewById(R.id.edNuptk);
         etKtp = (EditText) findViewById(R.id.edKtp);
         etTmpLhr = (EditText) findViewById(R.id.edLahir);
@@ -195,7 +195,7 @@ public class UbahActivity extends AppCompatActivity {
                                     etNama.setText(nama);
                                     etTmpLhr.setText(tempat);
                                     etTglLhr.setText(tgl);
-//                                    etNip.setText(nip);
+                                    etNip.setText(nip);
                                     etNuptk.setText(nuptk);
                                     etAlamat.setText(alamat);
 
@@ -275,7 +275,7 @@ public class UbahActivity extends AppCompatActivity {
                 map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
                 map.put("ktp", etKtp.getText().toString());
                 map.put("nuptk", etNuptk.getText().toString());
-//                map.put("nip", etNip.getText().toString());
+                map.put("nip", etNip.getText().toString());
                 map.put("alamat", etAlamat.getText().toString());
 
                 // params.put("tahun_nmasuk", thnmasuk.getText().toString());
