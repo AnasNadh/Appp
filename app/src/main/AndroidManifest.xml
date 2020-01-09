@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.masnadh.myapppeg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="id.masnadh.myapppeg.connections.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="id.masnadh.myapppeg.ListActivity"/>
+        <activity android:name="id.masnadh.myapppeg.activities.TestActivity"/>
+        <activity android:name="id.masnadh.myapppeg.activities.DataActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.AbsenActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RombelActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.SKPActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.PendidikanActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RiwayatPegActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.PendukungActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.UbahActivity" />
+
+        <activity android:name="id.masnadh.myapppeg.activities.RegisterActivity" />
+        <activity android:name="id.masnadh.myapppeg.MainActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

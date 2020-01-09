@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainProfile"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimaryDark" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/fotoProfile"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@id/profileToolbar"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnrefreshData"-->
+<!--        android:layout_width="117dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_below="@id/fotoProfile"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="13dp"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:text="Perbarui Data"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="13dp"-->
+<!--        android:visibility="visible"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btneditData"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:layout_below="@id/fotoProfile"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:layout_marginRight="13dp"-->
+<!--        android:text="Edit Data"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="13dp" />-->
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileToolbar"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Personal" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_golongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Golongan" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_jabatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jabatan" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>

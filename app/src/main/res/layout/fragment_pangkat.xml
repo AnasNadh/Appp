@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.masnadh.myapppeg.fragments.PangkatFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:contex=".activities.DataActivity"
+            tools:showIn="@layout/activity_data">
+
+
+
+            <TableLayout
+                android:id="@+id/tbData1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="12dp">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Pangkat"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_pangkat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Nama Pegawai"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Golongan"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_gol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Nomor Induk Pegawai"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Jenis Jabatan"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_jejab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Tempat Tanggal Lahir"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Terhitung Mulsi"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_tmt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Tempat Tanggal Lahir"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Pejabat Pengesah"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_pejab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Tempat Tanggal Lahir"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Nomor SK"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_noSk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Tempat Tanggal Lahir"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Tanggal SK"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/detail_tglSk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Tempat Tanggal Lahir"
+                            android:textColor="@android:color/black" />
+
+                    </TableRow>
+
+
+
+
+                </LinearLayout>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
