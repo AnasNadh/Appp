@@ -125,8 +125,8 @@ public class UbahActivity extends AppCompatActivity {
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
                                 String alamat = obj.getString("alamat");
-                                String ktp = obj.getString("ktp");
-                                String tempat = obj.getString("tempat_lhr");
+//                                String ktp = obj.getString("ktp");
+//                                String tempat = obj.getString("tempat_lhr");
 
                               if(extraId==id)
                                 {
