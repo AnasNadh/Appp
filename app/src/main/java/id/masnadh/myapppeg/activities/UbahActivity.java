@@ -125,8 +125,8 @@ public class UbahActivity extends AppCompatActivity {
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
                                 String alamat = obj.getString("alamat");
-//                                String ktp = obj.getString("ktp");
-//                                String tempat = obj.getString("tempat_lhr");
+                                String ktp = obj.getString("ktp");
+                                String tempat = obj.getString("tempat_lhr");
 
                               if(extraId==id)
                                 {
@@ -263,7 +263,7 @@ public class UbahActivity extends AppCompatActivity {
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 Calendar newDate = Calendar.getInstance();
                 newDate.set(year,month,dayOfMonth);
-                Tvtgllahir.setText(dateFormat.format(newDate.getTime()));
+                etTglLhr.setText(dateFormat.format(newDate.getTime()));
             }
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH),newCalendar.get(Calendar.DAY_OF_MONTH));
         datePickerDialog.show();

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+            "outputFile": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Mas Nadh\\.gradle\\caches\\transforms-2\\files-2.1\\9d559df33edfd198a044043c2676ce21\\jetified-navigation-ui-2.0.0\\res\\values-iw\\values-iw.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw660dp-v13\\values-sw660dp-v13.xml",
+            "outputFile": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw660dp-v13\\values-sw660dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Mas Nadh\\.gradle\\caches\\transforms-2\\files-2.1\\70c74e03a7e0317ffa121f845e0b77f6\\sdp-android-1.0.6\\res\\values-sw660dp-v13\\values-sw660dp-v13.xml",
