@@ -42,6 +42,7 @@ import org.json.JSONObject;
 import id.masnadh.myapppeg.R;
 
 import id.masnadh.myapppeg.activities.DataActivity;
+import id.masnadh.myapppeg.activities.RombelActivity;
 import id.masnadh.myapppeg.activities.UbahActivity;
 import id.masnadh.myapppeg.adapters.DashboardAdapter;
 import id.masnadh.myapppeg.models.dashboard;
@@ -241,10 +242,11 @@ public class HomeFragment extends Fragment {
 //                        startActivity(intent5);
                         break;
                     case 6:
-                        Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
-//                        Intent intent6 = new Intent(HomeFragment.this.getContext(), RombelActivity.class);
-//                        intent6.putExtra("extra_menu_rombel", dashboards.get(position));
-//                        startActivity(intent6);
+                       // Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
+                        Intent intent6 = new Intent(HomeFragment.this.getContext(), RombelActivity.class);
+                        intent6.putExtra("extra_menu_rombel", dashboards.get(position));
+                        intent6.putExtra( TAG_ID,id);
+                        startActivity(intent6);
                         break;
                     case 7:
                         Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();

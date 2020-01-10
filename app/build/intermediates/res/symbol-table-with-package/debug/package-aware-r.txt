@@ -1915,8 +1915,10 @@ id bbUser
 id beginning
 id blocking
 id bottom
+id btn_cancel
 id btn_login
 id btn_reg
+id btn_simpan
 id buttonPanel
 id cToolbar
 id cancel_action
@@ -2043,6 +2045,10 @@ id ifRoom
 id image
 id img_menu
 id info
+id inp_fakultas
+id inp_nama
+id inp_npm
+id inp_prodi
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -2253,6 +2259,10 @@ id textinput_error
 id textinput_helper_text
 id tgUser
 id thnmskUser
+id tilFakultas
+id tilnama
+id tilnpm
+id tilprodi
 id time
 id title
 id titleDividerNoCustom

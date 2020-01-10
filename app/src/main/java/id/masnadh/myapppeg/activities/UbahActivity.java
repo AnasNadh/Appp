@@ -50,7 +50,7 @@ public class UbahActivity extends AppCompatActivity {
     private SimpleDateFormat dateFormat;
 
     String url = Server.URL +"pegawai.php";
-    String url_update  = Server.URL+"updates.php";
+    String url_update  = Server.URL+"update.php";
 
     final String TAG ="Edit";
     public final static String TAG_ID = "id";
@@ -202,6 +202,15 @@ public class UbahActivity extends AppCompatActivity {
 //                                    etAlamat.setText(alamat);
 //
 //                                    etKtp.setText(obj.getString("ktp"));
+
+                                    String code = obj.getString("code");
+                                    if (code.equals("sukses"))
+                                    {
+                                        ubahBerhasil();
+                                    }else if (code.equals("gagal"))
+                                    {
+                                        ubahGagal();
+                                    }
 
                                 }
                             }
