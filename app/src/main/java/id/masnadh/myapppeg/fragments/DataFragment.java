@@ -19,6 +19,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.JsonArray;
 import id.masnadh.myapppeg.R;
+import id.masnadh.myapppeg.connections.Server;
 //import Server;
 
 import org.json.JSONArray;
@@ -30,7 +31,7 @@ import org.json.JSONObject;
  */
 public class DataFragment extends Fragment {
 
-    final String url = "http://152746201341.ip-dynamic.com/login/pegawai.php";
+    final String url = Server.URL+"pegawai.php";
 
     TextView tvNama,tvNip, tvNuptk, tvStatus, tvKtp, tvTempat, tvTanggal, tvAgama, tvTelp, tvJk, tvGolDa, tvNikah, tvAlamat, tvEmail;
     //String id,idu;

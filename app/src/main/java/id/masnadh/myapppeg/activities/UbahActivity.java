@@ -186,31 +186,23 @@ public class UbahActivity extends AppCompatActivity {
                                 String id_peg = obj.getString("id_peg");
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
-//                                String alamat = obj.getString("alamat");
-////                                String ktp = obj.getString("ktp");
-//                                String tempat = obj.getString("tempat_lhr");
-//                                String tgl = obj.getString("tgl_lhr");
+                                String alamat = obj.getString("alamat");
+                                String ktp = obj.getString("ktp");
+                                String tempat = obj.getString("tempat_lhr");
+                                String tgl = obj.getString("tgl_lhr");
 
                               if(extraId==id)
                                 {
                                     idUser.setText(id_peg);
                                     etNama.setText(nama);
-//                                    etTmpLhr.setText(tempat);
-//                                    etTglLhr.setText(tgl);
+                                    etTmpLhr.setText(tempat);
+                                    etTglLhr.setText(tgl);
                                     etNip.setText(nip);
                                     etNuptk.setText(nuptk);
-//                                    etAlamat.setText(alamat);
+                                    etAlamat.setText(alamat);
 //
-//                                    etKtp.setText(obj.getString("ktp"));
+                                    etKtp.setText(obj.getString("ktp"));
 
-                                    String code = obj.getString("code");
-                                    if (code.equals("sukses"))
-                                    {
-                                        ubahBerhasil();
-                                    }else if (code.equals("gagal"))
-                                    {
-                                        ubahGagal();
-                                    }
 
                                 }
                             }
@@ -269,17 +261,17 @@ public class UbahActivity extends AppCompatActivity {
 
                 map.put("id_peg", idUser.getText().toString());
                 map.put("nama", etNama.getText().toString());
-//                map.put("tempat_lahir", etTmpLhr.getText().toString());
-//                map.put("tanggal_lahir", etTglLhr.getText().toString());
-//                map.put("jk", String.valueOf(edJk.getSelectedItem()));
-//                map.put("agama", String.valueOf(edAgama.getSelectedItem()));
-//                map.put("status_kepeg", String.valueOf(edKepeg.getSelectedItem()));
-//                map.put("gol_darah", String.valueOf(edGolda.getSelectedItem()));
-//                map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
-//                map.put("ktp", etKtp.getText().toString());
+                map.put("tempat_lhr", etTmpLhr.getText().toString());
+                map.put("tgl_lhr", etTglLhr.getText().toString());
+                map.put("jk", String.valueOf(edJk.getSelectedItem()));
+                map.put("agama", String.valueOf(edAgama.getSelectedItem()));
+                map.put("status_kepeg", String.valueOf(edKepeg.getSelectedItem()));
+                map.put("gol_darah", String.valueOf(edGolda.getSelectedItem()));
+                map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
+                map.put("ktp", etKtp.getText().toString());
                 map.put("nuptk", etNuptk.getText().toString());
                 map.put("nip", etNip.getText().toString());
-//                map.put("alamat", etAlamat.getText().toString());
+                map.put("alamat", etAlamat.getText().toString());
 
                 return map;
             }
