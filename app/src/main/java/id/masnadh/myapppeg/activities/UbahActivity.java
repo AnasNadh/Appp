@@ -5,8 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.renderscript.Sampler;
@@ -55,7 +57,10 @@ public class UbahActivity extends AppCompatActivity {
     final String TAG ="Edit";
     public final static String TAG_ID = "id";
     public final static String TAG_MESSAGE = "message";
+                     SharedPreferences sharedpreferences;
+                     Boolean session = false;
 
+                     String id;
     Spinner edKepeg, edNikah, edGolda, edJk, edAgama;
     TextView idUser,nipd,nisnUser,TvkodeKelas,Tvjurusan,Tvtgllahir,kelasAwal,thnmasuk;
     EditText etNama, etNip, etNuptk, etKtp, etTmpLhr, etTglLhr, etAlamat;
@@ -182,12 +187,12 @@ public class UbahActivity extends AppCompatActivity {
                                 JSONObject obj = dataArray.getJSONObject(i);
                                 int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
                                 String nama = obj.getString("nama");
-                                int id = obj.getInt("id_peg");
+                             final   int id = obj.getInt("id_peg");
                                 String id_peg = obj.getString("id_peg");
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
                                 String alamat = obj.getString("alamat");
-                                String ktp = obj.getString("ktp");
+//                                String ktp = obj.getString("ktp");
                                 String tempat = obj.getString("tempat_lhr");
                                 String tgl = obj.getString("tgl_lhr");
 
@@ -236,7 +241,14 @@ public class UbahActivity extends AppCompatActivity {
 
                     Toast.makeText(UbahActivity.this, dataObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
 
-                    // adapter.notifyDataSetChanged();
+                   if(dataObj.getString(TAG_MESSAGE).equals("sukses"))
+                   {
+                    ubahBerhasil();
+                   
+                   }   else{
+                      ubahGagal();
+                   }
+
 
                 } catch (JSONException e) {
                     // JSON error
@@ -292,9 +304,17 @@ public class UbahActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        Intent login = new Intent(UbahActivity.this, DataActivity.class);
-                        finish();
-                        startActivity(login);
+                              sharedpreferences = getSharedPreferences(LoginActivity.my_shared_preferences, Context.MODE_PRIVATE);
+                              session = sharedpreferences.getBoolean(LoginActivity.session_status, false);
+
+                              id = sharedpreferences.getString(TAG_ID, id);
+
+                              if(session) {
+                                  Intent sukses = new Intent(UbahActivity.this, DataActivity.class);
+                                  sukses.putExtra(TAG_ID, id);
+                                  finish();
+                                  startActivity(sukses);
+                              }
 
                     }
                 });

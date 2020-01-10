@@ -1,4 +1,4 @@
-#Fri Jan 10 20:34:09 WIB 2020
+#Fri Jan 10 21:15:35 WIB 2020
 base.0=/home/muslikh/Project/Appp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

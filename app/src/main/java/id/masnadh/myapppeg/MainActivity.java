@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
     TextView namaUser, txt_id;
     String id, username, idu,level,levelU;
-    SharedPreferences sharedpreferences;
 
     private RequestQueue requestQueue;
     private StringRequest stringRequest;
 
+    SharedPreferences sharedpreferences;
     Boolean session = false;
 
     private static final String TAG_SUCCESS = "success";
