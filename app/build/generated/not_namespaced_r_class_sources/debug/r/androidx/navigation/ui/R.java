@@ -1168,12 +1168,12 @@ public final class R {
         public static final int transition_position = 0x7f0901bb;
         public static final int transition_scene_layoutid_cache = 0x7f0901bc;
         public static final int transition_transform = 0x7f0901bd;
-        public static final int uniform = 0x7f0901c6;
-        public static final int unlabeled = 0x7f0901c7;
-        public static final int up = 0x7f0901c8;
-        public static final int view_offset_helper = 0x7f0901cc;
-        public static final int visible = 0x7f0901ce;
-        public static final int wrap_content = 0x7f0901d2;
+        public static final int uniform = 0x7f0901c8;
+        public static final int unlabeled = 0x7f0901c9;
+        public static final int up = 0x7f0901ca;
+        public static final int view_offset_helper = 0x7f0901ce;
+        public static final int visible = 0x7f0901d0;
+        public static final int wrap_content = 0x7f0901d4;
     }
     public static final class integer {
         private integer() {}

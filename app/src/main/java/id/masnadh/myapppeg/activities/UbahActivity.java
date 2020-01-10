@@ -50,7 +50,7 @@ public class UbahActivity extends AppCompatActivity {
     private SimpleDateFormat dateFormat;
 
     String url = Server.URL +"pegawai.php";
-    String url_update  = Server.URL+"update.php";
+    String url_update  = Server.URL+"updates.php";
 
     final String TAG ="Edit";
     public final static String TAG_ID = "id";
@@ -90,6 +90,7 @@ public class UbahActivity extends AppCompatActivity {
             }
         });
 
+        idUser = (TextView) findViewById(R.id.tvIdPeg);
         etNama = (EditText) findViewById(R.id.edNama);
         etNip = (EditText) findViewById(R.id.edNip);
         etNuptk = (EditText) findViewById(R.id.edNuptk);
@@ -182,34 +183,26 @@ public class UbahActivity extends AppCompatActivity {
                                 int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
                                 String nama = obj.getString("nama");
                                 int id = obj.getInt("id_peg");
+                                String id_peg = obj.getString("id_peg");
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
-                                String alamat = obj.getString("alamat");
-//                                String ktp = obj.getString("ktp");
-                                String tempat = obj.getString("tempat_lhr");
-                                String tgl = obj.getString("tgl_lhr");
+//                                String alamat = obj.getString("alamat");
+////                                String ktp = obj.getString("ktp");
+//                                String tempat = obj.getString("tempat_lhr");
+//                                String tgl = obj.getString("tgl_lhr");
 
                               if(extraId==id)
                                 {
-
+                                    idUser.setText(id_peg);
                                     etNama.setText(nama);
-                                    etTmpLhr.setText(tempat);
-                                    etTglLhr.setText(tgl);
+//                                    etTmpLhr.setText(tempat);
+//                                    etTglLhr.setText(tgl);
                                     etNip.setText(nip);
                                     etNuptk.setText(nuptk);
-                                    etAlamat.setText(alamat);
+//                                    etAlamat.setText(alamat);
+//
+//                                    etKtp.setText(obj.getString("ktp"));
 
-                                    etKtp.setText(obj.getString("ktp"));
-
-
-//                                    String code = obj.getString("code");
-//                                    if (code.equals("sukses"))
-//                                    {
-//                                        ubahBerhasil();
-//                                    }else if (code.equals("gagal"))
-//                                    {
-//                                        ubahGagal();
-//                                    }
                                 }
                             }
                             Log.d(TAG, "onResponse:" + response);
@@ -227,6 +220,7 @@ public class UbahActivity extends AppCompatActivity {
                     }
                 });
         requestQueue.add(stringRequests);
+        requestQueue.getCache().clear();
     }
 
     private void simpan()
@@ -264,21 +258,19 @@ public class UbahActivity extends AppCompatActivity {
 
                 Map<String,String> map = new HashMap<>();
 
-                //map.put("id_peg", idUser.getText().toString());
+                map.put("id_peg", idUser.getText().toString());
                 map.put("nama", etNama.getText().toString());
-                map.put("tempat_lahir", etTmpLhr.getText().toString());
-                map.put("tanggal_lahir", etTglLhr.getText().toString());
-                map.put("jk", String.valueOf(edJk.getSelectedItem()));
-                map.put("agama", String.valueOf(edAgama.getSelectedItem()));
-                map.put("status_kepeg", String.valueOf(edKepeg.getSelectedItem()));
-                map.put("gol_darah", String.valueOf(edGolda.getSelectedItem()));
-                map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
-                map.put("ktp", etKtp.getText().toString());
+//                map.put("tempat_lahir", etTmpLhr.getText().toString());
+//                map.put("tanggal_lahir", etTglLhr.getText().toString());
+//                map.put("jk", String.valueOf(edJk.getSelectedItem()));
+//                map.put("agama", String.valueOf(edAgama.getSelectedItem()));
+//                map.put("status_kepeg", String.valueOf(edKepeg.getSelectedItem()));
+//                map.put("gol_darah", String.valueOf(edGolda.getSelectedItem()));
+//                map.put("status_nikah", String.valueOf(edNikah.getSelectedItem()));
+//                map.put("ktp", etKtp.getText().toString());
                 map.put("nuptk", etNuptk.getText().toString());
                 map.put("nip", etNip.getText().toString());
-                map.put("alamat", etAlamat.getText().toString());
-
-                // params.put("tahun_nmasuk", thnmasuk.getText().toString());
+//                map.put("alamat", etAlamat.getText().toString());
 
                 return map;
             }
