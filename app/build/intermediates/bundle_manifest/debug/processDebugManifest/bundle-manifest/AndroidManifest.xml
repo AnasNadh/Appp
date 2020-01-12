@@ -23,7 +23,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="id.masnadh.myapppeg.adminActivies.AdminActivity" />
         <activity android:name="id.masnadh.myapppeg.ListActivity" />
         <activity android:name="id.masnadh.myapppeg.activities.TestActivity" />
         <activity android:name="id.masnadh.myapppeg.activities.DataActivity" />

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/muslikh/Project/Appp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml",
+            "outputFile": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
-                    "source": "/home/muslikh/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/values-mr/values-mr.xml",
+                    "source": "C:\\Users\\Mas Nadh\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/muslikh/.gradle/caches/transforms-2/files-2.1/81cd626059d882f1496fd23634379cb7/jetified-navigation-ui-2.0.0/res/values-mr/values-mr.xml",
+                    "source": "C:\\Users\\Mas Nadh\\.gradle\\caches\\transforms-2\\files-2.1\\9d559df33edfd198a044043c2676ce21\\jetified-navigation-ui-2.0.0\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/muslikh/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/res/values-mr/values-mr.xml",
+                    "source": "C:\\Users\\Mas Nadh\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

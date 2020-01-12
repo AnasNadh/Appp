@@ -1908,6 +1908,7 @@ id all
 id always
 id anakKeUser
 id appBar
+id appBarA
 id async
 id auto
 id barrier
@@ -1921,6 +1922,7 @@ id btn_reg
 id btn_simpan
 id buttonPanel
 id cToolbar
+id cToolbarA
 id cancel_action
 id card_view
 id center
@@ -2173,9 +2175,11 @@ id right
 id right_icon
 id right_side
 id rlTop
+id rlTop2
 id rl_img
 id rtUser
 id rvData
+id rvDataA
 id rwUser
 id save_image_matrix
 id save_non_transition_alpha
@@ -2357,6 +2361,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_absen
+layout activity_admin
 layout activity_data
 layout activity_list
 layout activity_login
