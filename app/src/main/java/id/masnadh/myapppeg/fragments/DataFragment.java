@@ -75,13 +75,6 @@ public class DataFragment extends Fragment {
                     {
 
                         JSONObject obj = dataArray.getJSONObject(i);
-//                        int extraId = 1;
-//                        try {
-//                            extraId = Integer.parseInt(getActivity().getIntent().getStringExtra(TAG_IDU));
-//
-//                        } catch (NumberFormatException e) {
-//                            e.printStackTrace();
-//                        }
 
                         int extraId = Integer.parseInt(getActivity().getIntent().getStringExtra(TAG_ID));
                         String nama = obj.getString("nama");

@@ -17,8 +17,6 @@
             tools:contex=".activities.DataActivity"
             tools:showIn="@layout/activity_data">
 
-
-
             <TableLayout
                 android:id="@+id/tbData2"
                 android:layout_width="match_parent"
