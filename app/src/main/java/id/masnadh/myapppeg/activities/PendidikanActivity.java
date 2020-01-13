@@ -79,11 +79,11 @@ public class PendidikanActivity extends AppCompatActivity {
 //        pd.setCancelable(false);
 //        pd.show();
 
-        JsonArrayRequest reqData = new JsonArrayRequest(Request.Method.POST, Server.URL_PEND,null,
+        JsonArrayRequest reqData = new JsonArrayRequest(Request.Method.GET, Server.URL_PEND,null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-//                        pd.cancel();
+                       // pd.cancel();
                         Log.d("volley","response : " + response.toString());
                         for(int i = 0 ; i < response.length(); i++)
                         {
@@ -91,13 +91,7 @@ public class PendidikanActivity extends AppCompatActivity {
                                 JSONObject data = response.getJSONObject(i);
                                 PendidikanModel pm = new PendidikanModel();
                                 int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
-                                //String nama = data.getString("nama");
                                 int id = data.getInt("id_peg");
-//                                pm.setJenjang(data.getString("tingkat"));
-//                                pm.setNamaSek(data.getString("nama_sekolah"));
-//                                pm.setProdi(data.getString("jurusan"));
-//                                pm.setLulus(data.getString("thn_lulus"));
-
 
                                 if ( extraId == id) {
                                     pm.setJenjang(data.getString("tingkat"));

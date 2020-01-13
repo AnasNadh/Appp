@@ -57,10 +57,10 @@ public class UbahActivity extends AppCompatActivity {
     final String TAG ="Edit";
     public final static String TAG_ID = "id";
     public final static String TAG_MESSAGE = "message";
-                     SharedPreferences sharedpreferences;
-                     Boolean session = false;
+    SharedPreferences sharedpreferences;
+    Boolean session = false;
 
-                     String id;
+    String id;
     Spinner edKepeg, edNikah, edGolda, edJk, edAgama;
     TextView idUser,nipd,nisnUser,TvkodeKelas,Tvjurusan,Tvtgllahir,kelasAwal,thnmasuk;
     EditText etNama, etNip, etNuptk, etKtp, etTmpLhr, etTglLhr, etAlamat;
