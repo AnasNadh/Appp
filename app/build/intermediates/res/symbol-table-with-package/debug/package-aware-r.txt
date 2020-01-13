@@ -1836,6 +1836,7 @@ id FlipHorizontal
 id FlipPage
 id Foreground2Background
 id META
+id PendToolbar
 id RotateDown
 id RotateUp
 id SHIFT
@@ -1915,13 +1916,11 @@ id bbUser
 id beginning
 id blocking
 id bottom
-id btn_cancel
 id btn_cancel_pend
 id btn_deletePend
 id btn_insertPend
 id btn_login
 id btn_reg
-id btn_simpan
 id btn_simpan_pend
 id buttonPanel
 id cToolbar
@@ -2053,12 +2052,9 @@ id ifRoom
 id image
 id img_menu
 id info
-id inp_fakultas
 id inp_jenjang
 id inp_lulus
-id inp_nama
 id inp_nama_sekolah
-id inp_npm
 id inp_prodi
 id invisible
 id italic
