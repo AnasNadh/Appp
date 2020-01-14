@@ -34,6 +34,7 @@ public class PendidikanActivity extends AppCompatActivity {
 
     public static final String EXTRA_MENU = "extra_menu_pendidikan";
 
+    String id;
     RecyclerView mRecyclerView;
     Button btnInsert, btnDelete;
     RecyclerView.Adapter mAdapter;
@@ -62,11 +63,12 @@ public class PendidikanActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         loadJson();
-
         btnInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String Id = getIntent().getStringExtra(TAG_ID);
                 Intent intent = new Intent(PendidikanActivity.this,TambahPendidikanActivity.class);
+                intent.putExtra(TAG_ID,Id);
                 startActivity(intent);
             }
         });

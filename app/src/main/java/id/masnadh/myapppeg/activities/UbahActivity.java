@@ -187,12 +187,11 @@ public class UbahActivity extends AppCompatActivity {
                                 JSONObject obj = dataArray.getJSONObject(i);
                                 int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
                                 String nama = obj.getString("nama");
-                             final   int id = obj.getInt("id_peg");
+                                final   int id = obj.getInt("id_peg");
                                 String id_peg = obj.getString("id_peg");
                                 String nip = obj.getString("nip");
                                 String nuptk = obj.getString("nuptk");
                                 String alamat = obj.getString("alamat");
-//                                String ktp = obj.getString("ktp");
                                 String tempat = obj.getString("tempat_lhr");
                                 String tgl = obj.getString("tgl_lhr");
 
@@ -205,7 +204,6 @@ public class UbahActivity extends AppCompatActivity {
                                     etNip.setText(nip);
                                     etNuptk.setText(nuptk);
                                     etAlamat.setText(alamat);
-//
                                     etKtp.setText(obj.getString("ktp"));
 
 

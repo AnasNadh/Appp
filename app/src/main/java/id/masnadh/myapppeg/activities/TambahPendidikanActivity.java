@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -23,6 +24,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -42,9 +44,10 @@ public class TambahPendidikanActivity extends AppCompatActivity {
     ProgressDialog pd;
     public final static String TAG_ID = "id";
     List<PendidikanModel> mItems;
-
+    TextView idpeg;
     SharedPreferences sharedpreferences;
     Boolean session = false;
+    final String TAG ="Edit";
 
     String id;
 
@@ -54,6 +57,9 @@ public class TambahPendidikanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_pendidikan);
 
+ //       editData();
+
+        idpeg = (TextView)findViewById(R.id.id_peg);
         etJenjang = (EditText) findViewById(R.id.inp_jenjang);
         etNamaSek = (EditText) findViewById(R.id.inp_nama_sekolah);
         etProdi = (EditText) findViewById(R.id.inp_prodi);
@@ -76,24 +82,85 @@ public class TambahPendidikanActivity extends AppCompatActivity {
                 startActivity(main);
             }
         });
+
+        String id_peg = getIntent().getStringExtra(TAG_ID);
+        idpeg.setText(id_peg);
+
     }
 
+//    private void editData() {
+//
+//        RequestQueue requestQueue = Volley.newRequestQueue(this);
+//        StringRequest stringRequests =
+//                new StringRequest(Request.Method.GET, Server.URL_INSERT_PEND, new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        try {
+//                            JSONArray dataArray= new JSONArray(response);
+//
+//                            for (int i =0; i<dataArray.length(); i++)
+//                            {
+//
+//
+//                                JSONObject obj = dataArray.getJSONObject(i);
+//                                int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
+//                                int id = obj.getInt("id_peg");
+//                                String id_peg = obj.getString("id_peg");
+//                                String tingkat = obj.getString("tingkat");
+//                                String nama = obj.getString("nama_sekolah");
+//                                String prodi = obj.getString("jurusan");
+//                                String lulus = obj.getString("thn_lulus");
+////////
+//                        if (extraId == id) {
+//
+//                            idpeg.setText(id_peg);
+//                            etJenjang.setText(tingkat);
+//                            etNamaSek.setText(nama);
+//                            etProdi.setText(prodi);
+//                            etLulus.setText(lulus);
+//////                            pm.setJenjang(jsonObject.getString("tingkat"));
+//////                            pm.setNamaSek(jsonObject.getString("nama_sekolah"));
+//////                            pm.setProdi(jsonObject.getString("jurusan"));
+//////                            pm.setLulus(jsonObject.getString("thn_lulus"));
+//////                            mItems.add(pm);
+//                        }
+//                            }
+//                            Log.d(TAG, "onResponse:" + response);
+//                        }  catch(
+//                                JSONException e)
+//
+//                        {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        etNamaSek.setText(error.getLocalizedMessage());
+//                    }
+//                });
+//        requestQueue.add(stringRequests);
+//        requestQueue.getCache().clear();
+//
+//    }
+
     private void simpanData() {
+
+        final String ip = this.idpeg.getText().toString().trim();
+        final String tingkat = this.etNamaSek.getText().toString().trim();
+        final String nama = this.etJenjang.getText().toString().trim();
+        final String jurusan = this.etProdi.getText().toString().trim();
+        final String lulus = this.etLulus.getText().toString().trim();
+
 //        pd.setMessage("Menyimpan Data");
 //        pd.setCancelable(false);
 //        pd.show();
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.URL_INSERT_PEND, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-   //             pd.cancel();
+                    try {
+                        JSONObject jsonObject = new JSONObject(response);
 
-//                for(int i = 0 ; i < response.length(); i++){
-//                Log.d("volley","response : " + response.toString());
-//
-                try {
-                    JSONObject jsonObject = new JSONObject(response);
-                                           PendidikanModel pm = new PendidikanModel();
-//
                         int code = Integer.parseInt(jsonObject.getString("code"));
                         if (code == 1)
                         {
@@ -102,36 +169,14 @@ public class TambahPendidikanActivity extends AppCompatActivity {
                         {
                             daftarGAgal();
                         }
-//                        int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
-//                        int id = jsonObject.getInt("id_peg");
-////                        String ktp = jsonObject.getString("tingkat");
-////                        String tempat = jsonObject.getString("nama_sekolah");
-////                        String tanggal = jsonObject.getString("jurusan");
-////                        String agama = jsonObject.getString("thn_lulus");
-////
-//                        if ( extraId == id) {
-////
-////                            etJenjang.setText(ktp);
-////                            etNamaSek.setText(tempat);
-////                            etProdi.setText(tanggal);
-////                            etLulus.setText(agama);
-//                            pm.setJenjang(jsonObject.getString("tingkat"));
-//                            pm.setNamaSek(jsonObject.getString("nama_sekolah"));
-//                            pm.setProdi(jsonObject.getString("jurusan"));
-//                            pm.setLulus(jsonObject.getString("thn_lulus"));
-//                            mItems.add(pm);
-//                        }
-
-//                }
-
-                    Toast.makeText(TambahPendidikanActivity.this, "pesan : "+ jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
 
 
-                //startActivity(new Intent(TambahPendidikanActivity.this, PendidikanActivity.class));
+                        Toast.makeText(TambahPendidikanActivity.this, "pesan : " + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
 
             }
         }, new Response.ErrorListener() {
@@ -150,10 +195,11 @@ public class TambahPendidikanActivity extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
 
                 Map<String, String> map = new HashMap<>();
-                map.put("tingkat",etJenjang.getText().toString());
-                map.put("nama_sekolah",etNamaSek.getText().toString());
-                map.put("jurusan",etProdi.getText().toString());
-                map.put("thn_lulus",etLulus.getText().toString());
+                map.put("id_peg",idpeg.getText().toString());
+                map.put("tingkat", tingkat);
+                map.put("nama_sekolah", nama);
+                map.put("jurusan", jurusan);
+                map.put("thn_lulus", lulus);
 
                 return map;
 
@@ -185,9 +231,6 @@ public class TambahPendidikanActivity extends AppCompatActivity {
                             startActivity(sukses);
                         }
 
-//                        Intent login = new Intent(TambahPendidikanActivity.this, PendidikanActivity.class);
-//                        finish();
-//                        startActivity(login);
 
                     }
                 });

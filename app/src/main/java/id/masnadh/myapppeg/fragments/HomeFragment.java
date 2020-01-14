@@ -215,7 +215,7 @@ public class HomeFragment extends Fragment {
                     case 1:
                         Intent intent1 = new Intent(HomeFragment.this.getContext(), UbahActivity.class);
                         intent1.putExtra("extra_menu_ubah", dashboards.get(position));
-                        intent1.putExtra( TAG_ID,id);
+                        intent1.putExtra(TAG_ID, id);
                         startActivity(intent1);
                         break;
                     case 2:

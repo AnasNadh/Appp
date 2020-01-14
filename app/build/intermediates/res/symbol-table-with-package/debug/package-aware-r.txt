@@ -2048,6 +2048,7 @@ id icon
 id icon_group
 id icon_login
 id idSiswa
+id id_peg
 id ifRoom
 id image
 id img_menu

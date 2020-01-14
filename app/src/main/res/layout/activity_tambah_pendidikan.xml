@@ -5,12 +5,20 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID "
+            android:id="@+id/id_peg"/>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tilnpm">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Sekolah"
@@ -22,7 +30,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tilnama">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Jenjang"
@@ -34,7 +42,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tilprodi">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Program Studi"
@@ -46,7 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tilFakultas">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tahun Lulus"
