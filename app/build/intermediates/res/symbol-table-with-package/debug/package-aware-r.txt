@@ -1899,6 +1899,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_delete
 id add
 id address
 id agmUser
@@ -1917,6 +1918,7 @@ id beginning
 id blocking
 id bottom
 id btn_cancel_pend
+id btn_delete
 id btn_deletePend
 id btn_insertPend
 id btn_login
@@ -2273,6 +2275,7 @@ id tilnama
 id tilnpm
 id tilprodi
 id time
+id tingkat_param
 id title
 id titleDividerNoCustom
 id title_template
@@ -2368,6 +2371,7 @@ layout abc_tooltip
 layout activity_absen
 layout activity_admin
 layout activity_data
+layout activity_delete
 layout activity_list
 layout activity_login
 layout activity_main

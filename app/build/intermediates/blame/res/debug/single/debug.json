@@ -1136,6 +1136,10 @@
         "source": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\src\\main\\res\\drawable\\download.png"
     },
     {
+        "merged": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_delete.xml.flat",
+        "source": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\src\\main\\res\\layout\\activity_delete.xml"
+    },
+    {
         "merged": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_karier3.png.flat",
         "source": "D:\\Android\\PKL\\AppEdit\\MyAppPeg\\Appp\\app\\src\\main\\res\\drawable\\karier3.png"
     },

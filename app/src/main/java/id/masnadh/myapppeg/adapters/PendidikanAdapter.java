@@ -2,6 +2,7 @@ package id.masnadh.myapppeg.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +18,17 @@ import java.util.List;
 
 import id.masnadh.myapppeg.R;
 import id.masnadh.myapppeg.activities.PendidikanActivity;
+import id.masnadh.myapppeg.activities.TambahPendidikanActivity;
 import id.masnadh.myapppeg.models.PendidikanModel;
 
 public class PendidikanAdapter extends RecyclerView.Adapter<PendidikanAdapter.ViewHolder> {
 
     private List<PendidikanModel> mItems;
     private Context context;
+    SharedPreferences sharedpreferences;
+    Boolean session = false;
+    public final static String TAG_ID = "id";
+    String id;
 
     public PendidikanAdapter(List<PendidikanModel> mItems, Context context) {
         this.mItems = mItems;
@@ -71,12 +77,15 @@ public class PendidikanAdapter extends RecyclerView.Adapter<PendidikanAdapter.Vi
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent update = new Intent(context, PendidikanActivity.class);
+                    Intent update = new Intent(context, TambahPendidikanActivity.class);
                     update.putExtra("update",1);
+                    update.putExtra(TAG_ID, id);
                     update.putExtra("tingkat",pm.getJenjang());
                     update.putExtra("nama_sekolah",pm.getNamaSek());
                     update.putExtra("jurusan",pm.getProdi());
                     update.putExtra("thn_lulus",pm.getLulus());
+
+                    context.startActivity(update);
                 }
             });
         }

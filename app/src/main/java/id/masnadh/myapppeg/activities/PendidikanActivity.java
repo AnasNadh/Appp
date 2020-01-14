@@ -73,6 +73,16 @@ public class PendidikanActivity extends AppCompatActivity {
             }
         });
 
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Id = getIntent().getStringExtra(TAG_ID);
+                Intent hapus = new Intent(PendidikanActivity.this,DeleteActivity.class);
+                hapus.putExtra(TAG_ID,Id);
+                startActivity(hapus);
+            }
+        });
+
     }
 
     private void loadJson() {

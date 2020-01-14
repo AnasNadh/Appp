@@ -10,7 +10,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="ID "
-            android:id="@+id/id_peg"/>
+            android:id="@+id/id_peg"
+            android:visibility="invisible"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -22,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Sekolah"
-            android:id="@+id/inp_nama_sekolah"/>
+            android:id="@+id/inp_nama_sekolah"
+            android:inputType="textCapWords"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -46,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Program Studi"
-            android:id="@+id/inp_prodi"/>
+            android:id="@+id/inp_prodi"
+            android:inputType="textCapWords"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -58,7 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tahun Lulus"
-            android:id="@+id/inp_lulus"/>
+            android:id="@+id/inp_lulus"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 

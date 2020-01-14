@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.TambahPendidikanActivity"></activity>
+        <activity android:name=".activities.DeleteActivity"></activity>
+        <activity android:name=".activities.TambahPendidikanActivity" />
         <activity android:name=".adminActivies.AdminActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".activities.TestActivity" />
