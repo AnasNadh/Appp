@@ -28,6 +28,7 @@ import id.masnadh.myapppeg.R;
 import id.masnadh.myapppeg.adapters.PendidikanAdapter;
 import id.masnadh.myapppeg.connections.AppController;
 import id.masnadh.myapppeg.connections.Server;
+import id.masnadh.myapppeg.fragments.HomeFragment;
 import id.masnadh.myapppeg.models.PendidikanModel;
 
 public class PendidikanActivity extends AppCompatActivity {
@@ -130,5 +131,14 @@ public class PendidikanActivity extends AppCompatActivity {
 
         AppController.getInstance().addToRequestQueue(reqData);
     }
+
+//    public void onBackPressed()
+//    {
+//
+//        Intent intent = new Intent(PendidikanActivity.this, HomeFragment.class);
+//        startActivity(intent);
+//        return;
+//
+//    }
 
 }

@@ -324,7 +324,7 @@ public class UbahActivity extends AppCompatActivity {
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert
-                .setMessage("Perubahan Data Belum Berhasil")
+                .setMessage("Perubahan Data Gagal")
                 .setCancelable(false)
                 .setPositiveButton("Ulangi", new DialogInterface.OnClickListener() {
                     @Override

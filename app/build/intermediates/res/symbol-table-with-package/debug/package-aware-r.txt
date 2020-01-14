@@ -2297,6 +2297,7 @@ id tvNamaEdt
 id tvNip
 id tvPeg
 id tvTitle
+id tvWel
 id tv_menu_title
 id txt_app_name
 id uid

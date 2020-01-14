@@ -86,7 +86,7 @@ public class TambahPendidikanActivity extends AppCompatActivity {
             etNamaSek.setText(intent_nama);
             etProdi.setText(intent_jurusan);
             etLulus.setText(intent_lulus);
-            
+
 
         }
 
@@ -387,5 +387,7 @@ public class TambahPendidikanActivity extends AppCompatActivity {
         AlertDialog berhasil = alert.create();
         berhasil.show();
     }
+
+
 
 }

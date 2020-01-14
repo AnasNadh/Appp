@@ -128,7 +128,7 @@ public class HomeFragment extends Fragment {
                                 if ( extraId == id) {
 
 
-                                    tvTitle.setText("SELAMAT DATANG "+nama);
+                                    tvTitle.setText(nama);
                                     tvNip.setText("NIP. "+nip);
 
                                 }

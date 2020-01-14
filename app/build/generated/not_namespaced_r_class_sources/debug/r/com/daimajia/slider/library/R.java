@@ -535,11 +535,11 @@ public final class R {
         public static final int title = 0x7f0901c5;
         public static final int title_template = 0x7f0901c7;
         public static final int topPanel = 0x7f0901cd;
-        public static final int up = 0x7f0901e0;
-        public static final int useLogo = 0x7f0901e3;
-        public static final int visible = 0x7f0901e6;
-        public static final int withText = 0x7f0901e8;
-        public static final int wrap_content = 0x7f0901ea;
+        public static final int up = 0x7f0901e1;
+        public static final int useLogo = 0x7f0901e4;
+        public static final int visible = 0x7f0901e7;
+        public static final int withText = 0x7f0901e9;
+        public static final int wrap_content = 0x7f0901eb;
     }
     public static final class integer {
         private integer() {}
