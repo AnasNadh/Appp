@@ -1,6 +1,8 @@
 package id.masnadh.myapppeg.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -44,6 +46,8 @@ public class PendidikanActivity extends AppCompatActivity {
     ProgressDialog pd;
     public final static String TAG_ID = "id";
 
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +66,11 @@ public class PendidikanActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mManager);
         mAdapter = new PendidikanAdapter(mItems, PendidikanActivity.this);
         mRecyclerView.setAdapter(mAdapter);
+
+        toolbar = (Toolbar) findViewById(R.id.PendToolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white));
+        getSupportActionBar().setTitle("Pendidikan");
 
         loadJson();
         btnInsert.setOnClickListener(new View.OnClickListener() {

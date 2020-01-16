@@ -15,21 +15,35 @@
         android:titleTextColor="@android:color/white"
         android:background="@color/colorPrimaryDark" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/fotoProfile"-->
-<!--        android:background="@android:color/white"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="150dp"-->
-<!--        android:layout_below="@id/profileToolbar"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentLeft="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentRight="true"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        tools:srcCompat="@tools:sample/avatars" />-->
+    <RelativeLayout
+        android:id="@+id/rlImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileToolbar">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/fotoProfile"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_foto"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ganti Foto"-->
+<!--            android:layout_below="@id/fotoProfile"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:visibility="invisible"-->
+<!--            style="@style/Widget.AppCompat.ActionButton.CloseMode"/>-->
+
+    </RelativeLayout>
+
+
 
 <!--    <Button-->
 <!--        android:id="@+id/btnrefreshData"-->
@@ -67,7 +81,7 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileToolbar"
+        android:layout_below="@id/rlImg"
         android:layout_marginTop="5dp">
 
         <com.google.android.material.tabs.TabItem
@@ -77,16 +91,22 @@
             android:text="Data Personal" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_golongan"
+            android:id="@+id/tab_pasutri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Golongan" />
+            android:text="Data Suami / Istri" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_jabatan"
+            android:id="@+id/tab_anak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jabatan" />
+            android:text="Data Anak" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_ortu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Orang Tua" />
 
     </com.google.android.material.tabs.TabLayout>
 

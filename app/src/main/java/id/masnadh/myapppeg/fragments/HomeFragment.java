@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,6 +67,8 @@ public class HomeFragment extends Fragment {
     SharedPreferences sharedpreferences;
     Boolean session = false;
 
+    ImageView imageView;
+
     final String url = "http://152746201341.ip-dynamic.com/login/pegawai.php";
 
     TextView tvTitle, tvNip;
@@ -100,6 +103,8 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ctLayout.setTitle("");
 
+        imageView = (ImageView) view.findViewById(R.id.ivProfile);
+        imageView.setImageResource(R.mipmap.ic_logo);
         tvTitle = (TextView) view.findViewById(R.id.tvTitle);
         tvNip = (TextView) view.findViewById(R.id.tvNip);
 
@@ -161,7 +166,7 @@ public class HomeFragment extends Fragment {
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
                 if (Math.abs(verticalOffset) > 200){
                     ExpandedActionBar = false;
-                    ctLayout.setTitle("Sistem Informasi Kepegawaian");
+                    ctLayout.setTitle("APLIKASI KEPEGAWAIAN SMKN PRIGEN");
                     rlTop.setVisibility(View.GONE);
                     getActivity().invalidateOptionsMenu();
                 } else {

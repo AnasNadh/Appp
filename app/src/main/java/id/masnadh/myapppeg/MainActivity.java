@@ -3,6 +3,7 @@ package id.masnadh.myapppeg;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ToolbarWidgetWrapper;
 import androidx.fragment.app.Fragment;
 
 import android.content.Context;
@@ -14,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 
 import com.android.volley.RequestQueue;
@@ -21,6 +23,8 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import id.masnadh.myapppeg.R;
+
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import id.masnadh.myapppeg.activities.LoginActivity;
 import id.masnadh.myapppeg.connections.Server;
@@ -55,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 //    RelativeLayout rlTop;
 //    AppBarLayout appBar;
 //    CollapsingToolbarLayout ctLayout;
-//    Toolbar toolbar;
+    Toolbar toolbar;
 //
 //    boolean ExpandedActionBar = true;
 
@@ -64,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbarMain);
+//        setSupportActionBar(toolbar);
+//
+//        getSupportActionBar().setTitle("SIAKAD");
+//        toolbar.setSubtitle("SMK NEGERI PRIGEN");
+//        toolbar.setLogo(R.mipmap.ic_launcher);
 
 
         sharedpreferences = getSharedPreferences(LoginActivity.my_shared_preferences, Context.MODE_PRIVATE);

@@ -8,6 +8,14 @@
     android:layout_height="match_parent"
     tools:context="id.masnadh.myapppeg.MainActivity">
 
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarMain"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="@id/container_layout"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:titleTextColor="#FFFFFF" />-->
+
     <FrameLayout
         android:id="@+id/container_layout"
         android:layout_width="0dp"

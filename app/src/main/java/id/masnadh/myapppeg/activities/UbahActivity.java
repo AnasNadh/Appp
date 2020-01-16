@@ -2,6 +2,7 @@ package id.masnadh.myapppeg.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -27,6 +28,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -52,6 +54,7 @@ public class UbahActivity extends AppCompatActivity {
     private SimpleDateFormat dateFormat;
 
     String url = Server.URL +"pegawai.php";
+    String url2 = Server.URL +"jabatan.php";
     String url_update  = Server.URL+"update.php";
 
     final String TAG ="Edit";
@@ -63,7 +66,8 @@ public class UbahActivity extends AppCompatActivity {
     String id;
     Spinner edKepeg, edNikah, edGolda, edJk, edAgama;
     TextView idUser,nipd,nisnUser,TvkodeKelas,Tvjurusan,Tvtgllahir,kelasAwal,thnmasuk;
-    EditText etNama, etNip, etNuptk, etKtp, etTmpLhr, etTglLhr, etAlamat;
+    EditText etNama, etNip, etNuptk, etKtp, etTmpLhr, etTglLhr, etAlamat,
+             etJab;
 
     Button updateData;
 
@@ -74,6 +78,7 @@ public class UbahActivity extends AppCompatActivity {
         editData();
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbarEdDaata);
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white));
         setSupportActionBar(toolbar);
 
         dateFormat = new SimpleDateFormat("dd-MM-yy", Locale.US);
@@ -169,6 +174,9 @@ public class UbahActivity extends AppCompatActivity {
             }
         });
 
+        //Tab Jabatan
+        etJab = (EditText) findViewById(R.id.edtJabApp);
+
 
     }
     public void editData() {
@@ -177,6 +185,7 @@ public class UbahActivity extends AppCompatActivity {
                 new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         try {
                             JSONArray dataArray= new JSONArray(response);
 
@@ -195,6 +204,9 @@ public class UbahActivity extends AppCompatActivity {
                                 String tempat = obj.getString("tempat_lhr");
                                 String tgl = obj.getString("tgl_lhr");
 
+//                                //jabatan tab
+//                                String jab = obj.getString("jabatan_app");
+
                               if(extraId==id)
                                 {
                                     idUser.setText(id_peg);
@@ -205,6 +217,9 @@ public class UbahActivity extends AppCompatActivity {
                                     etNuptk.setText(nuptk);
                                     etAlamat.setText(alamat);
                                     etKtp.setText(obj.getString("ktp"));
+
+//                                    //Jabatan Tab
+//                                    etJab.setText(jab);
 
 
                                 }
@@ -283,6 +298,9 @@ public class UbahActivity extends AppCompatActivity {
                 map.put("nip", etNip.getText().toString());
                 map.put("alamat", etAlamat.getText().toString());
 
+//                //Jabatan
+//                map.put("jabatan_app", etJab.getText().toString());
+
                 return map;
             }
 
@@ -290,7 +308,6 @@ public class UbahActivity extends AppCompatActivity {
 
         AppController.getInstance().addToRequestQueue(stringRequest);
     }
-
 
     public void ubahBerhasil()
     {

@@ -25,6 +25,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="id.masnadh.myapppeg.tambahData.TambahPasutriActivity" />
         <activity android:name="id.masnadh.myapppeg.activities.DeleteActivity" />
         <activity android:name="id.masnadh.myapppeg.activities.TambahPendidikanActivity" />
         <activity android:name="id.masnadh.myapppeg.adminActivies.AdminActivity" />

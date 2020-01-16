@@ -18,10 +18,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.tabs.TabLayout;
 import id.masnadh.myapppeg.R;
 
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Request;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DataActivity extends AppCompatActivity  {
 
@@ -31,9 +37,14 @@ public class DataActivity extends AppCompatActivity  {
     public final static String TAG = "DataActivity";
     public final static String TAG_ID = "id";
     PagerAdapter pagerAdapter;
-    Button btneditdata,btnrefresh;
+    Button btnFoto;
     ImageView fotoProfile;
     Boolean session = false;
+
+    private RequestQueue requestQueue;
+    private StringRequest stringRequest;
+
+    ArrayList <HashMap<String, String>> data_list;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

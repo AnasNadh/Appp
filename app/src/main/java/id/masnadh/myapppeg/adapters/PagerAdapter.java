@@ -4,9 +4,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import id.masnadh.myapppeg.fragments.AnakFragment;
 import id.masnadh.myapppeg.fragments.DataFragment;
 import id.masnadh.myapppeg.fragments.GolFragment;
+import id.masnadh.myapppeg.fragments.OrtuFragment;
 import id.masnadh.myapppeg.fragments.PangkatFragment;
+import id.masnadh.myapppeg.fragments.PasutriFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
@@ -24,9 +27,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new DataFragment();
             case 1:
-                return new GolFragment();
+                return new PasutriFragment();
             case 2:
-                return new PangkatFragment();
+                return new AnakFragment();
+            case 3:
+                return new OrtuFragment();
             default:
                 return null;
         }
