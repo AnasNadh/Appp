@@ -40,6 +40,7 @@ public class DataFragment extends Fragment {
     public final static String TAG_ID = "id";
     RequestQueue requestQueue;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -115,8 +116,7 @@ public class DataFragment extends Fragment {
                         }
                     }
                     Log.d(TAG, "onResponse:" + response);
-                }  catch(
-                        JSONException e)
+                }  catch(JSONException e)
 
                 {
                     e.printStackTrace();

@@ -15,8 +15,7 @@ import java.util.List;
 
 import id.masnadh.myapppeg.R;
 import id.masnadh.myapppeg.models.PasutriModel;
-import id.masnadh.myapppeg.models.PendidikanModel;
-import id.masnadh.myapppeg.tambahData.TambahPasutriActivity;
+import id.masnadh.myapppeg.tambahHapusData.TambahPasutriActivity;
 
 public class PasutriAdapter extends RecyclerView.Adapter<PasutriAdapter.PasutriViewHolder> {
 

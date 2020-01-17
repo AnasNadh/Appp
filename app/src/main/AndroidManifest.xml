@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".tambahData.TambahPasutriActivity"></activity>
+        <activity android:name=".tambahHapusData.HapusPasutriActivity"/>
+        <activity android:name=".activities.PasutriActivity" />
+        <activity android:name=".tambahHapusData.TambahPasutriActivity" />
         <activity android:name=".activities.DeleteActivity" />
         <activity android:name=".activities.TambahPendidikanActivity" />
         <activity android:name=".adminActivies.AdminActivity" />

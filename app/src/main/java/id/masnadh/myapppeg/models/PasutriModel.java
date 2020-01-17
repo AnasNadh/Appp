@@ -4,6 +4,8 @@ public class PasutriModel {
 
     String nikPas, namaPas, tempatPas, tglPas, pendidikanPas, pekerjaanPas, hubunganPas;
 
+    public PasutriModel(){}
+
     public PasutriModel(String nikPas, String namaPas, String tempatPas, String tglPas, String pendidikanPas, String pekerjaanPas, String hubunganPas) {
         this.nikPas = nikPas;
         this.namaPas = namaPas;

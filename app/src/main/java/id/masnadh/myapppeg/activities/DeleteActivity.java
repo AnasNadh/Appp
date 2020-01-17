@@ -59,9 +59,6 @@ public class DeleteActivity extends AppCompatActivity {
     }
 
     private void deleteData() {
-//        pd.setMessage("Delete Data ...");
-//        pd.setCancelable(false);
-//        pd.show();
 
         StringRequest delReq = new StringRequest(Request.Method.POST, Server.URL_DEL_PEND, new Response.Listener<String>() {
             @Override
