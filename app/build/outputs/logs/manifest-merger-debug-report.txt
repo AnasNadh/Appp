@@ -17,6 +17,7 @@ MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Mas Nadh\.gradle\ca
 MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\70c74e03a7e0317ffa121f845e0b77f6\sdp-android-1.0.6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\90bf04d2afe16d38a84d049332ac417f\volley-1.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\a2059840c6e41d52cc365584b6e4a99d\jetified-library-1.1.5\AndroidManifest.xml:2:1-14:12
+MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\6a2cb61a3771f998028d556332479d9d\circleimageview-3.0.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\67e3a22614326cadf216274f01d6d423\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -101,6 +102,8 @@ MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Mas Nadh\.gradle\ca
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\c7734bc2ed1ccd89082451fc335dfebe\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\90bf04d2afe16d38a84d049332ac417f\volley-1.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\90bf04d2afe16d38a84d049332ac417f\volley-1.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\6a2cb61a3771f998028d556332479d9d\circleimageview-3.0.2\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\6a2cb61a3771f998028d556332479d9d\circleimageview-3.0.2\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\c0d2e640f7ab4a8801956a088b36c944\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
@@ -243,6 +246,8 @@ MERGED from [com.android.volley:volley:1.1.0] C:\Users\Mas Nadh\.gradle\caches\t
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\90bf04d2afe16d38a84d049332ac417f\volley-1.1.0\AndroidManifest.xml:7:5-43
 MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\a2059840c6e41d52cc365584b6e4a99d\jetified-library-1.1.5\AndroidManifest.xml:7:5-9:41
 MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\a2059840c6e41d52cc365584b6e4a99d\jetified-library-1.1.5\AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\6a2cb61a3771f998028d556332479d9d\circleimageview-3.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\6a2cb61a3771f998028d556332479d9d\circleimageview-3.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41

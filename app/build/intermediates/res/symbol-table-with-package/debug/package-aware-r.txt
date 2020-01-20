@@ -715,6 +715,11 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color list_divider
+color list_row_end_color
+color list_row_hover_end_color
+color list_row_hover_start_color
+color list_row_start_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1753,6 +1758,7 @@ drawable abc_vector_test
 drawable absen
 drawable admin
 drawable analisadiklat
+drawable attach_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1902,7 +1908,6 @@ id actions
 id activity_chooser_view_content
 id activity_delete
 id add
-id address
 id agmUser
 id alamatUser
 id alamatsebelum
@@ -1922,6 +1927,7 @@ id btn_cancel_pend
 id btn_delete
 id btn_deleteJab
 id btn_deletePend
+id btn_delete_pas
 id btn_delete_pasutri
 id btn_insertJab
 id btn_insertPend
@@ -1929,7 +1935,9 @@ id btn_insert_pasutri
 id btn_login
 id btn_reg
 id btn_simpan_pend
+id buttonChoose
 id buttonPanel
+id buttonUpload
 id cToolbar
 id cancel_action
 id card_view
@@ -1965,6 +1973,7 @@ id default_center_bottom_indicator
 id default_center_top_indicator
 id default_center_top_left_indicator
 id default_center_top_right_indicator
+id del_param
 id description
 id description_layout
 id design_bottom_sheet
@@ -2031,6 +2040,7 @@ id edNama
 id edNip
 id edNuptk
 id edStatusKepeg
+id editTextName
 id edit_query
 id edtAgama
 id edtAlamat
@@ -2053,6 +2063,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_add
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2157,9 +2168,7 @@ id line3
 id link_register
 id list
 id listMode
-id list_id
 id list_item
-id list_nama
 id loading_bar
 id loading_log
 id loading_reg
@@ -2176,7 +2185,6 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id namaUser
-id name
 id nav_controller_view_tag
 id nav_home
 id nav_profile
@@ -2220,6 +2228,7 @@ id rlImg
 id rlTop
 id rl_img
 id rtUser
+id rv
 id rvData
 id rvJab
 id rvPasutri
@@ -2269,6 +2278,7 @@ id stretch
 id stsTinggalUser
 id submenuarrow
 id submit_area
+id swipe_refresh_layout
 id t
 id tabMode
 id tab_anak
@@ -2347,7 +2357,6 @@ id tvTitle
 id tvWel
 id tv_menu_title
 id txt_app_name
-id uid
 id unchecked
 id uniform
 id unlabeled

@@ -40,90 +40,89 @@
 23-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:15:9-54
 24        android:supportsRtl="true"
 24-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:16:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme"
-26-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:17:9-40
-27        android:usesCleartextTraffic="true" >
-27-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:18:9-44
-28        <activity android:name="id.masnadh.myapppeg.tambahHapusData.HapusPasutriActivity" />
-28-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:19:9-73
-28-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:19:19-71
-29        <activity android:name="id.masnadh.myapppeg.activities.PasutriActivity" />
-29-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:20:9-64
-29-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:20:19-61
-30        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahPasutriActivity" />
-30-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:21:9-75
-30-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:21:19-72
-31        <activity android:name="id.masnadh.myapppeg.activities.DeleteActivity" />
-31-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:22:9-63
-31-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:22:19-60
-32        <activity android:name="id.masnadh.myapppeg.activities.TambahPendidikanActivity" />
-32-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:23:9-73
-32-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:23:19-70
-33        <activity android:name="id.masnadh.myapppeg.adminActivies.AdminActivity" />
-33-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:24:9-65
-33-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:24:19-62
-34        <activity android:name="id.masnadh.myapppeg.ListActivity" />
-34-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:25:9-50
-34-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:25:19-47
-35        <activity android:name="id.masnadh.myapppeg.activities.TestActivity" />
-35-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:26:9-61
-35-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:26:19-58
-36        <activity android:name="id.masnadh.myapppeg.activities.DataActivity" />
-36-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:27:9-61
-36-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:27:19-58
-37        <activity android:name="id.masnadh.myapppeg.activities.AbsenActivity" />
-37-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:28:9-62
-37-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:28:19-59
-38        <activity android:name="id.masnadh.myapppeg.activities.RombelActivity" />
-38-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:29:9-63
-38-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:29:19-60
-39        <activity android:name="id.masnadh.myapppeg.activities.SKPActivity" />
-39-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:30:9-60
-39-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:30:19-57
-40        <activity android:name="id.masnadh.myapppeg.activities.PendidikanActivity" />
-40-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:31:9-67
-40-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:31:19-64
-41        <activity android:name="id.masnadh.myapppeg.activities.RiwayatPegActivity" />
-41-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:32:9-67
-41-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:32:19-64
-42        <activity android:name="id.masnadh.myapppeg.activities.PendukungActivity" />
-42-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:33:9-66
-42-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:33:19-63
-43        <activity android:name="id.masnadh.myapppeg.activities.UbahActivity" />
-43-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:34:9-61
-43-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:34:19-58
-44        <activity android:name="id.masnadh.myapppeg.activities.RegisterActivity" />
-44-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:35:9-65
-44-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:35:19-62
-45        <activity android:name="id.masnadh.myapppeg.MainActivity" />
-45-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:36:9-50
-45-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:36:19-47
-46        <activity android:name="id.masnadh.myapppeg.activities.LoginActivity" >
-46-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:37:9-43:20
-46-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:37:19-59
-47            <intent-filter>
-47-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:38:13-42:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:39:17-69
-48-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:39:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:41:17-77
-50-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:41:27-74
-51            </intent-filter>
-52        </activity>
-53
-54        <provider
-54-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-55            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-56            android:authorities="id.masnadh.myapppeg.lifecycle-process"
-56-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-57            android:exported="false"
-57-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-58            android:multiprocess="true" />
-58-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-59    </application>
-60
-61</manifest>
+25        android:theme="@style/AppTheme"
+25-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:17:9-40
+26        android:usesCleartextTraffic="true" >
+26-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:18:9-44
+27        <activity android:name="id.masnadh.myapppeg.tambahHapusData.HapusPasutriActivity" />
+27-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:19:9-73
+27-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:19:19-71
+28        <activity android:name="id.masnadh.myapppeg.activities.PasutriActivity" />
+28-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:20:9-64
+28-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:20:19-61
+29        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahPasutriActivity" />
+29-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:21:9-75
+29-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:21:19-72
+30        <activity android:name="id.masnadh.myapppeg.activities.DeleteActivity" />
+30-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:22:9-63
+30-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:22:19-60
+31        <activity android:name="id.masnadh.myapppeg.activities.TambahPendidikanActivity" />
+31-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:23:9-73
+31-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:23:19-70
+32        <activity android:name="id.masnadh.myapppeg.adminActivies.AdminActivity" />
+32-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:24:9-65
+32-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:24:19-62
+33        <activity android:name="id.masnadh.myapppeg.ListActivity" />
+33-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:25:9-50
+33-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:25:19-47
+34        <activity android:name="id.masnadh.myapppeg.activities.TestActivity" />
+34-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:26:9-61
+34-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:26:19-58
+35        <activity android:name="id.masnadh.myapppeg.activities.DataActivity" />
+35-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:27:9-61
+35-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:27:19-58
+36        <activity android:name="id.masnadh.myapppeg.activities.AbsenActivity" />
+36-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:28:9-62
+36-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:28:19-59
+37        <activity android:name="id.masnadh.myapppeg.activities.RombelActivity" />
+37-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:29:9-63
+37-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:29:19-60
+38        <activity android:name="id.masnadh.myapppeg.activities.SKPActivity" />
+38-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:30:9-60
+38-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:30:19-57
+39        <activity android:name="id.masnadh.myapppeg.activities.PendidikanActivity" />
+39-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:31:9-67
+39-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:31:19-64
+40        <activity android:name="id.masnadh.myapppeg.activities.RiwayatPegActivity" />
+40-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:32:9-67
+40-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:32:19-64
+41        <activity android:name="id.masnadh.myapppeg.activities.PendukungActivity" />
+41-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:33:9-66
+41-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:33:19-63
+42        <activity android:name="id.masnadh.myapppeg.activities.UbahActivity" />
+42-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:34:9-61
+42-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:34:19-58
+43        <activity android:name="id.masnadh.myapppeg.activities.RegisterActivity" />
+43-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:35:9-65
+43-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:35:19-62
+44        <activity android:name="id.masnadh.myapppeg.MainActivity" />
+44-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:36:9-50
+44-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:36:19-47
+45        <activity android:name="id.masnadh.myapppeg.activities.LoginActivity" >
+45-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:37:9-43:20
+45-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:37:19-59
+46            <intent-filter>
+46-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:38:13-42:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:39:17-69
+47-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:39:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:41:17-77
+49-->D:\Android\PKL\AppEdit\MyAppPeg\Appp\app\src\main\AndroidManifest.xml:41:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <provider
+53-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+55            android:authorities="id.masnadh.myapppeg.lifecycle-process"
+55-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+56            android:exported="false"
+56-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+57            android:multiprocess="true" />
+57-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Mas Nadh\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+58    </application>
+59
+60</manifest>

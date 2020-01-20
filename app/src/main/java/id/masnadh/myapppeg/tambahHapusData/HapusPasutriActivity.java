@@ -28,6 +28,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import id.masnadh.myapppeg.R;
+import id.masnadh.myapppeg.activities.DataActivity;
 import id.masnadh.myapppeg.activities.DeleteActivity;
 import id.masnadh.myapppeg.activities.LoginActivity;
 import id.masnadh.myapppeg.activities.PendidikanActivity;
@@ -60,105 +61,11 @@ public class HapusPasutriActivity extends AppCompatActivity {
             }
         });
 
-        private void deleteData() {
-
-            StringRequest delReq = new StringRequest(Request.Method.POST, Server.URL_DEL_PEND, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    // pd.cancel();
-                    Log.d("volley", "response : " + response.toString());
-                    try {
-                        JSONObject jsonObject = new JSONObject(response);
-
-                        int code = Integer.parseInt(jsonObject.getString("code"));
-                        if (code == 1)
-                        {
-                            hapusBerhasil();
-                        }else if(code == 0)
-                        {
-                            hapusGagal();
-                        }
-
-                        Toast.makeText(DeleteActivity.this, "pesan : " + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    //             startActivity(new Intent(DeleteActivity.this, PendidikanActivity.class));
-
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    pd.cancel();
-                    Log.d("volley", "error : " + error.getMessage());
-                    Toast.makeText(DeleteActivity.this, "pesan : gagal menghapus data", Toast.LENGTH_SHORT).show();
-                }
-            }){
-                @Override
-                protected Map<String, String> getParams() throws AuthFailureError {
-                    Map<String, String> map = new HashMap<>();
-                    map.put("tingkat", deleteJur.getText().toString());
-                    return map;
-                }
-            };
-
-            AppController.getInstance().addToRequestQueue(delReq);
-
-        }
-
-        private void hapusBerhasil() {
-            AlertDialog.Builder alert = new AlertDialog.Builder(this);
-            alert
-                    .setMessage("Hapus Data Pendidikan Berhasil")
-                    .setCancelable(false)
-                    .setPositiveButton("Kembali", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            sharedpreferences = getSharedPreferences(LoginActivity.my_shared_preferences, Context.MODE_PRIVATE);
-                            session = sharedpreferences.getBoolean(LoginActivity.session_status, false);
-
-                            id = sharedpreferences.getString(TAG_ID, id);
-
-                            if(session) {
-                                Intent sukses = new Intent(DeleteActivity.this, PendidikanActivity.class);
-                                sukses.putExtra(TAG_ID, id);
-                                finish();
-                                startActivity(sukses);
-                            }
-
-
-                        }
-                    });
-
-            AlertDialog berhasil = alert.create();
-            berhasil.show();
-        }
-
-        private void hapusGagal() {
-            AlertDialog.Builder alert = new AlertDialog.Builder(this);
-            alert
-                    .setMessage("Penambahan Data Pendidikan Gagal")
-                    .setCancelable(false)
-                    .setNegativeButton("Ulangi", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            recreate();
-                        }
-                    });
-
-            AlertDialog berhasil = alert.create();
-            berhasil.show();
-        }
 
     }
 
     private void deleteData() {
-
-        StringRequest delReq = new StringRequest(Request.Method.POST, Server.URL_DEL_PEND, new Response.Listener<String>() {
+        StringRequest delReq = new StringRequest(Request.Method.POST, Server.URL_DEL_PAS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 // pd.cancel();
@@ -195,11 +102,56 @@ public class HapusPasutriActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> map = new HashMap<>();
-                map.put("tingkat", deleteNik.getText().toString());
+                map.put("nik", deleteNik.getText().toString());
                 return map;
             }
         };
 
         AppController.getInstance().addToRequestQueue(delReq);
     }
+
+    private void hapusBerhasil() {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert
+                .setMessage("Hapus Data Pendidikan Berhasil")
+                .setCancelable(false)
+                .setPositiveButton("Kembali", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        sharedpreferences = getSharedPreferences(LoginActivity.my_shared_preferences, Context.MODE_PRIVATE);
+                        session = sharedpreferences.getBoolean(LoginActivity.session_status, false);
+
+                        id = sharedpreferences.getString(TAG_ID, id);
+
+                        if(session) {
+                            Intent sukses = new Intent(HapusPasutriActivity.this, DataActivity.class);
+                            sukses.putExtra(TAG_ID, id);
+                            finish();
+                            startActivity(sukses);
+                        }
+                    }
+                });
+
+        AlertDialog berhasil = alert.create();
+        berhasil.show();
+    }
+
+    private void hapusGagal() {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert
+                .setMessage("Penambahan Data Pendidikan Gagal")
+                .setCancelable(false)
+                .setNegativeButton("Ulangi", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        recreate();
+                    }
+                });
+
+        AlertDialog berhasil = alert.create();
+        berhasil.show();
+    }
+
 }
