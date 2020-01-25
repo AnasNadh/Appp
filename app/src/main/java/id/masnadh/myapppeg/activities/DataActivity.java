@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -61,7 +62,16 @@ public class DataActivity extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
 
-       // fotoProfile = (ImageView) findViewById(R.id.fotoProfile);
+        final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
+        pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                recreate(); // your code
+                pullToRefresh.setRefreshing(false);
+            }
+        });
+
+        // fotoProfile = (ImageView) findViewById(R.id.fotoProfile);
 
 
 //        Picasso.with(this).load("http://smknprigen.sch.id/bkk/image/default.png").into(fotoProfile);

@@ -7,7 +7,6 @@
     android:id="@+id/mainProfile"
     android:layout_height="match_parent">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/profileToolbar"
         android:layout_width="match_parent"
@@ -15,21 +14,28 @@
         android:titleTextColor="@android:color/white"
         android:background="@color/colorPrimaryDark" />
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rlImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileToolbar">
+        android:layout_below="@id/profileToolbar"
+        android:orientation="horizontal">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/fotoProfile"-->
-<!--            android:background="@android:color/white"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            tools:srcCompat="@tools:sample/avatars" />-->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_below="@id/rlImg">
+
+        <ImageView
+            android:id="@+id/fotoProfile"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            tools:srcCompat="@tools:sample/avatars" />
 
 <!--        <Button-->
 <!--            android:id="@+id/btn_foto"-->
@@ -41,7 +47,9 @@
 <!--            android:visibility="invisible"-->
 <!--            style="@style/Widget.AppCompat.ActionButton.CloseMode"/>-->
 
-    </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
 
 
 
@@ -94,7 +102,7 @@
             android:id="@+id/tab_pasutri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Data Suami / Istri" />
+            android:text="Suami / Istri" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_anak"
@@ -106,7 +114,7 @@
             android:id="@+id/tab_ortu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Data Orang Tua" />
+            android:text="Orang Tua" />
 
     </com.google.android.material.tabs.TabLayout>
 

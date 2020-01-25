@@ -313,7 +313,7 @@ public class TambahPasutriActivity extends AppCompatActivity {
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert
-                .setMessage("Update Data Pendidikan Berhasil")
+                .setMessage("Update Berhasil")
                 .setCancelable(false)
                 .setPositiveButton("Kembali", new DialogInterface.OnClickListener() {
                     @Override
@@ -340,7 +340,7 @@ public class TambahPasutriActivity extends AppCompatActivity {
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert
-                .setMessage("Update Data Suami/Istri Gagal")
+                .setMessage("Update Data Gagal")
                 .setCancelable(false)
                 .setNegativeButton("Ulangi", new DialogInterface.OnClickListener() {
                     @Override

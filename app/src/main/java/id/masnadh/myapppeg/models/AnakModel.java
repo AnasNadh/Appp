@@ -3,11 +3,12 @@ package id.masnadh.myapppeg.models;
 public class AnakModel {
 
     String nikAn, namaAn, tempatAn, tglAn, pendidikanAn, pekerjaanAn, hubunganAn;
+    int id;
 
     public AnakModel() {
     }
 
-    public AnakModel(String nikAn, String namaAn, String tempatAn, String tglAn, String pendidikanAn, String pekerjaanAn, String hubunganAn) {
+    public AnakModel(String nikAn, String namaAn, String tempatAn, String tglAn, String pendidikanAn, String pekerjaanAn, String hubunganAn, int id) {
         this.nikAn = nikAn;
         this.namaAn = namaAn;
         this.tempatAn = tempatAn;
@@ -15,7 +16,26 @@ public class AnakModel {
         this.pendidikanAn = pendidikanAn;
         this.pekerjaanAn = pekerjaanAn;
         this.hubunganAn = hubunganAn;
+        this.id = id;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+//    public AnakModel(String nikAn, String namaAn, String tempatAn, String tglAn, String pendidikanAn, String pekerjaanAn, String hubunganAn) {
+//        this.nikAn = nikAn;
+//        this.namaAn = namaAn;
+//        this.tempatAn = tempatAn;
+//        this.tglAn = tglAn;
+//        this.pendidikanAn = pendidikanAn;
+//        this.pekerjaanAn = pekerjaanAn;
+//        this.hubunganAn = hubunganAn;
+//    }
 
     public String getNikAn() {
         return nikAn;

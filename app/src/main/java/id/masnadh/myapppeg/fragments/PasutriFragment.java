@@ -83,7 +83,7 @@ public class PasutriFragment extends Fragment {
         mManager = new LinearLayoutManager(PasutriFragment.this.getActivity(), LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(mManager);
         mAdapter = new PasutriAdapter(mItems, PasutriFragment.this.getActivity());
-        mRecyclerView.setAdapter(mAdapter);
+        //mRecyclerView.setAdapter(mAdapter);
 
         btnInsertPas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +131,8 @@ public class PasutriFragment extends Fragment {
                                     pm.setHubunganPas(data.getString("status_hub"));
                                     mItems.add(pm);
                                 }
+
+                                mRecyclerView.setAdapter(mAdapter);
 
                             } catch (JSONException e) {
                                 e.printStackTrace();

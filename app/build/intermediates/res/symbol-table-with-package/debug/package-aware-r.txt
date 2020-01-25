@@ -177,6 +177,10 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1787,6 +1791,8 @@ drawable help
 drawable ic_account_circle_black_24dp
 drawable ic_add_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_edit_white_24dp
+drawable ic_email_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1795,6 +1801,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_people_black_24dp
 drawable ic_person_black_24dp
+drawable ic_smartphone_black_24dp
 drawable indicator_corner_bg
 drawable kamus
 drawable karier
@@ -1923,6 +1930,7 @@ id bbUser
 id beginning
 id blocking
 id bottom
+id btnPhoto
 id btn_cancel_pend
 id btn_delete
 id btn_deleteJab
@@ -1934,6 +1942,7 @@ id btn_insertPend
 id btn_insert_pasutri
 id btn_login
 id btn_reg
+id btn_simpan_anak
 id btn_simpan_pend
 id buttonChoose
 id buttonPanel
@@ -1941,6 +1950,7 @@ id buttonUpload
 id cToolbar
 id cancel_action
 id card_view
+id card_view_anak
 id center
 id center_horizontal
 id center_vertical
@@ -2056,6 +2066,7 @@ id edt_pwd
 id edt_pwd_con
 id edt_user
 id edt_username
+id emailText
 id end
 id end_padder
 id enterAlways
@@ -2070,6 +2081,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fotoProfile
 id frame_layout
 id ghost_view
 id give_us_a_review_landmine_button
@@ -2095,14 +2107,21 @@ id img_menu
 id info
 id inp_jenjang
 id inp_lulus
+id inp_nama_anak
 id inp_nama_pas
 id inp_nama_sekolah
+id inp_nik_anak
 id inp_nik_pas
+id inp_pek_anak
 id inp_pek_pas
+id inp_pend_anak
 id inp_pend_pas
 id inp_prodi
+id inp_status_anak
 id inp_status_pas
+id inp_tgl_anak
 id inp_tgl_pas
+id inp_tmp_anak
 id inp_tmp_pas
 id invisible
 id italic
@@ -2155,6 +2174,8 @@ id label_tempatlahir
 id label_thnmsk
 id labeled
 id largeLabel
+id layoutText
+id layoutText2
 id layout_name
 id layout_pass_log
 id layout_pwd
@@ -2213,12 +2234,15 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id phoneText
 id pin
 id pindahanUser
 id profileToolbar
+id profile_image
 id progress_circular
 id progress_horizontal
 id provUser
+id pullToRefresh
 id radio
 id rect
 id right
@@ -2229,6 +2253,7 @@ id rlTop
 id rl_img
 id rtUser
 id rv
+id rvAnak
 id rvData
 id rvJab
 id rvPasutri
@@ -2436,10 +2461,12 @@ layout activity_main
 layout activity_pasutri
 layout activity_pendidikan
 layout activity_pendukung
+layout activity_profile
 layout activity_register
 layout activity_riwayat_peg
 layout activity_rombel
 layout activity_skp
+layout activity_tambah_anak
 layout activity_tambah_pasutri
 layout activity_tambah_pendidikan
 layout activity_test
@@ -3095,6 +3122,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

@@ -27,9 +27,13 @@ import id.masnadh.myapppeg.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import id.masnadh.myapppeg.activities.LoginActivity;
+import id.masnadh.myapppeg.activities.ProfileActivity;
 import id.masnadh.myapppeg.connections.Server;
 import id.masnadh.myapppeg.fragments.HomeFragment;
 import id.masnadh.myapppeg.fragments.ProfileFragment;
+
+import static id.masnadh.myapppeg.activities.LoginActivity.my_shared_preferences;
+import static id.masnadh.myapppeg.activities.LoginActivity.session_status;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -161,6 +165,14 @@ public class MainActivity extends AppCompatActivity {
                             .commit();
                     return true;
                 case R.id.nav_profile:
+//                    sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
+//                    session = sharedpreferences.getBoolean(session_status, false);
+//                    if (session) {
+//                        Intent profil = new Intent(MainActivity.this, ProfileActivity.class);
+//                        profil.putExtra(TAG_ID, id);
+//                        startActivity(profil);
+
+             //           return true;
                     fragment = new ProfileFragment();
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
