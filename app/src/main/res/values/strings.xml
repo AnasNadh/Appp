@@ -6,10 +6,10 @@
     <array name="menu_photo">
         <item>@drawable/data</item>
         <item>@drawable/edit</item>
-        <item>@drawable/open</item>
         <item>@drawable/pangkat</item>
         <item>@drawable/pendidikan</item>
         <item>@drawable/skp</item>
+        <item>@drawable/open</item>
         <item>@drawable/rombel</item>
         <item>@drawable/absen</item>
 
@@ -18,10 +18,10 @@
     <array name="menu_name">
         <item>Data Pegawai</item>
         <item>Ubah Data</item>
-        <item>Dokumen Pendukung</item>
         <item>Riwayat Kepegawaian</item>
         <item>Riwayat Pendidikan</item>
         <item>Sasaran Kerja Pegawai</item>
+        <item>Dokumen Pendukung</item>
         <item>Rombel dan Mapel</item>
         <item>Absensi</item>
     </array>

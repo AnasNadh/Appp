@@ -1971,10 +1971,6 @@ id customPanel
 id daimajia_indicator_wrapper
 id daimajia_slider_image
 id daimajia_slider_viewpager
-id data_appBar
-id data_cToolbar
-id data_rlTop
-id data_toolbar
 id decor_content_parent
 id default_activity_button
 id default_bottom_left_indicator
@@ -2126,7 +2122,6 @@ id inp_tmp_pas
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivPhoto
 id ivProfile
 id jklUser
 id jmlsdrkanUser
@@ -2238,6 +2233,7 @@ id phoneText
 id pin
 id pindahanUser
 id profileToolbar
+id profileToolbar2
 id profile_image
 id progress_circular
 id progress_horizontal
@@ -2307,8 +2303,11 @@ id swipe_refresh_layout
 id t
 id tabMode
 id tab_anak
+id tab_jab
 id tab_layout
+id tab_layout2
 id tab_ortu
+id tab_pangkat
 id tab_pasutri
 id tab_personal
 id tabelProfile
@@ -2391,6 +2390,7 @@ id updateSiswa
 id useLogo
 id view_offset_helper
 id view_pager
+id view_pager2
 id visible
 id wargaUser
 id withText

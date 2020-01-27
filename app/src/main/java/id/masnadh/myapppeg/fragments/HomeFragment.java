@@ -44,6 +44,7 @@ import id.masnadh.myapppeg.R;
 
 import id.masnadh.myapppeg.activities.DataActivity;
 import id.masnadh.myapppeg.activities.PendidikanActivity;
+import id.masnadh.myapppeg.activities.RiwayatPegActivity;
 import id.masnadh.myapppeg.activities.RombelActivity;
 import id.masnadh.myapppeg.activities.UbahActivity;
 import id.masnadh.myapppeg.adapters.DashboardAdapter;
@@ -224,26 +225,24 @@ public class HomeFragment extends Fragment {
                         startActivity(intent1);
                         break;
                     case 2:
-                        Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
-//                        Intent intent2 = new Intent(HomeFragment.this.getContext(), PendukungActivity.class);
-//                        intent2.putExtra("extra_menu_pendukung", dashboards.get(position));
-//                        startActivity(intent2);
+                       // Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(HomeFragment.this.getContext(), RiwayatPegActivity.class);
+                        //intent2.putExtra("extra_menu_pendukung", dashboards.get(position));
+                        intent2.putExtra(TAG_ID, id);
+                        startActivity(intent2);
                         break;
                     case 3:
-                        Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
-//                        Intent intent3 = new Intent(HomeFragment.this.getContext(), RiwayatPegActivity.class);
-//                        intent3.putExtra("extra_menu_peg", dashboards.get(position));
-//                        startActivity(intent3);
+                        Intent intent3 = new Intent(HomeFragment.this.getContext(), PendidikanActivity.class);
+                        intent3.putExtra("extra_menu_pendidikan", dashboards.get(position));
+                        intent3.putExtra( TAG_ID,id);
+                        startActivity(intent3);
                         break;
                     case 4:
-                        //Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
-//                        Intent intent4 = new Intent(HomeFragment.this.getContext(), PendidikanActivity.class);
+                        Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
+                        //Intent intent4 = new Intent(HomeFragment.this.getContext(), PendidikanActivity.class);
 //                        intent4.putExtra("extra_menu_pendidikan", dashboards.get(position));
 //                        startActivity(intent4);
-                        Intent intent4 = new Intent(HomeFragment.this.getContext(), PendidikanActivity.class);
-                        intent4.putExtra("extra_menu_pendidikan", dashboards.get(position));
-                        intent4.putExtra( TAG_ID,id);
-                        startActivity(intent4);
+
                         break;
                     case 5:
                         Toast.makeText(getActivity().getBaseContext(), "Menu Masih Dalam Proses Pengembangan", Toast.LENGTH_SHORT).show();
