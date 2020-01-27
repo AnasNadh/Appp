@@ -26,6 +26,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.masnadh.myapppeg.MainActivity;
 import id.masnadh.myapppeg.R;
 import id.masnadh.myapppeg.adapters.PendidikanAdapter;
 import id.masnadh.myapppeg.connections.AppController;
@@ -141,13 +142,12 @@ public class PendidikanActivity extends AppCompatActivity {
         AppController.getInstance().addToRequestQueue(reqData);
     }
 
-//    public void onBackPressed()
-//    {
-//
-//        Intent intent = new Intent(PendidikanActivity.this, HomeFragment.class);
-//        startActivity(intent);
-//        return;
-//
-//    }
+    public void onBackPressed()
+    {
+
+        Intent intent = new Intent(PendidikanActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 }

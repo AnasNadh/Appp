@@ -113,7 +113,7 @@ public class HapusPasutriActivity extends AppCompatActivity {
     private void hapusBerhasil() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert
-                .setMessage("Hapus Data Pendidikan Berhasil")
+                .setMessage("Hapus Data Suami / Istri Berhasil")
                 .setCancelable(false)
                 .setPositiveButton("Kembali", new DialogInterface.OnClickListener() {
                     @Override
@@ -140,7 +140,7 @@ public class HapusPasutriActivity extends AppCompatActivity {
     private void hapusGagal() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert
-                .setMessage("Penambahan Data Pendidikan Gagal")
+                .setMessage("Penambahan Data Gagal")
                 .setCancelable(false)
                 .setNegativeButton("Ulangi", new DialogInterface.OnClickListener() {
                     @Override

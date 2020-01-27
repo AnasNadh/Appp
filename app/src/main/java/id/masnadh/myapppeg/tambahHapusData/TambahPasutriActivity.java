@@ -64,7 +64,7 @@ public class TambahPasutriActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_pasutri);
 
-        dateFormat = new SimpleDateFormat("dd-MM-yy", Locale.US);
+        dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
         Intent data = getIntent();
         final int update = data.getIntExtra("update",0);

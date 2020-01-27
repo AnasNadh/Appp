@@ -8,6 +8,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,7 +23,11 @@ import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.tabs.TabLayout;
+
+import id.masnadh.myapppeg.MainActivity;
 import id.masnadh.myapppeg.R;
+import id.masnadh.myapppeg.connections.Server;
+import id.masnadh.myapppeg.fragments.HomeFragment;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Request;
@@ -34,13 +39,16 @@ public class DataActivity extends AppCompatActivity  {
 
     TextView namaUser, ttlUser, kodeKelas, jurusan;
     String idu,id;
+    ProgressDialog progressDialog;
     SharedPreferences sharedpreferences;
     public final static String TAG = "DataActivity";
     public final static String TAG_ID = "id";
     PagerAdapter pagerAdapter;
     Button btnFoto;
-    ImageView fotoProfile;
+    ImageView fotoPeg;
     Boolean session = false;
+
+    final String ambilfoto = Server.URL+"pegawai.php";
 
     private RequestQueue requestQueue;
     private StringRequest stringRequest;
@@ -61,6 +69,12 @@ public class DataActivity extends AppCompatActivity  {
 //        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
+
+//        fotoPeg = (ImageView) findViewById(R.id.fotoProfile1);
+//        progressDialog = new ProgressDialog(DataActivity.this);
+//        progressDialog.setMessage("Proses Pengambilan Data, Mohon Tunggu...");
+//        progressDialog.show();
+
 
         final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -508,4 +522,13 @@ public class DataActivity extends AppCompatActivity  {
 //////
 //////    }
     }
+
+//    @Override
+//    public void onBackPressed() {
+////        super.onBackPressed();
+//        Intent intent = new Intent(DataActivity.this, HomeFragment.class);
+//        startActivity(intent);
+//        finish();
+////        return;
+//    }
 }

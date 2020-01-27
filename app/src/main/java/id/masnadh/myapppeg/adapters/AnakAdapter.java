@@ -48,7 +48,7 @@ public class AnakAdapter extends RecyclerView.Adapter<AnakAdapter.ViewHolder> {
     private Context context;
     private List<AnakModel> anakModels;
     private ProgressDialog dialog;
-//    ArrayList<HashMap<String ,String >> list_data;
+    ArrayList<HashMap<String ,String >> list_data;
 //    ArrayList<HashMap<String ,String >>  filterL;
 
 //    public AnakAdapter(FragmentActivity activity, List<AnakModel> anakModels) {
@@ -78,13 +78,13 @@ public class AnakAdapter extends RecyclerView.Adapter<AnakAdapter.ViewHolder> {
         holder.tvPek.setText(data.getPekerjaanAn());
         holder.tvHub.setText(data.getHubunganAn());
 
-        holder.am = data;
+      //  holder.am = data;
 
 //        holder.cardView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(final View v) {
 //                Intent intent;
-//                final String id = anakModels.get(position).get("id_anak");
+//                //final String id = list_data.get(position).get("id_anak");
 //                //final String id = anakModels.get(position).getNikAn();
 //                final AlertDialog.Builder builder = new AlertDialog.Builder(context);
 //                final ProgressDialog dialog1 = new ProgressDialog(context);
@@ -167,69 +167,69 @@ public class AnakAdapter extends RecyclerView.Adapter<AnakAdapter.ViewHolder> {
 //                builder.create().show();
 //            }
 //        });
+
+//        holder.cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent;
+//                final String id = data.getNikAn();
+//                androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(v.getContext());
+//                final ProgressDialog dialog = new ProgressDialog(v.getContext());
+//                dialog.setMessage("Loading Delete Data");
+//                final CharSequence[] dialogItem = {"Edit Data", "Hapus Data"};
+//                builder.setTitle("Menu !");
+//                builder.setItems(dialogItem, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+////                        if (dialogItem[which].equals("Detail Data")){
+////                            Intent pindah = new Intent(context, DataActivity.class);
+////                            pindah.putExtra(TAG_ID, id);
+////                            context.startActivity(pindah);
+////                        } else
+//                            if (dialogItem[which].equals("Hapus")){
+//                            StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.URL_DEL_ANAK, new Response.Listener<String>() {
+//                                @Override
+//                                public void onResponse(String response) {
+//                                    try {
+//                                        JSONObject jsonObject = new JSONObject(response);
 //
-////        holder.cardView.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View v) {
-////                Intent intent;
-////                final String id = data.getNikAn();
-////                androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(v.getContext());
-////                final ProgressDialog dialog = new ProgressDialog(v.getContext());
-////                dialog.setMessage("Loading Delete Data");
-////                final CharSequence[] dialogItem = {"Edit Data", "Hapus Data"};
-////                builder.setTitle("Menu !");
-////                builder.setItems(dialogItem, new DialogInterface.OnClickListener() {
-////                    @Override
-////                    public void onClick(DialogInterface dialog, int which) {
-//////                        if (dialogItem[which].equals("Detail Data")){
-//////                            Intent pindah = new Intent(context, DataActivity.class);
-//////                            pindah.putExtra(TAG_ID, id);
-//////                            context.startActivity(pindah);
-//////                        } else
-////                            if (dialogItem[which].equals("Hapus")){
-////                            StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.URL_DEL_ANAK, new Response.Listener<String>() {
-////                                @Override
-////                                public void onResponse(String response) {
-////                                    try {
-////                                        JSONObject jsonObject = new JSONObject(response);
-////
-////                                        Toast.makeText(context, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
-////                                    } catch (JSONException e) {
-////                                        e.printStackTrace();
-////                                    }
-////                                }
-////                            }, new Response.ErrorListener() {
-////                                @Override
-////                                public void onErrorResponse(VolleyError error) {
-////                                    Log.e("TAG", "Error: " + error.getMessage());
-////                                    Toast.makeText(context, error.getMessage(), Toast.LENGTH_LONG).show();
-////                                }
-////                            }) {
-////                                @Override
-////                                protected Map<String, String> getParams() throws AuthFailureError {
-////                                    Map<String, String> map = new HashMap<String, String>();
-////                                    map.put("nik", data.getNikAn());
-////                                    return map;
-////                                }
-////                            };
-////
-////                            Intent refresh = new Intent(context, AnakFragment.class);
-////                            context.startActivity(refresh);
-////                            AppController.getInstance().addToRequestQueue(stringRequest);
-////
-////                        }
-////
-////                        else if (dialogItem[which].equals("Batal")){
-////                            dialog.dismiss();
-////                        }
-////
-////                    }
-////                });
-////                builder.show();
-////            }
-////        });
+//                                        Toast.makeText(context, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+//                                    } catch (JSONException e) {
+//                                        e.printStackTrace();
+//                                    }
+//                                }
+//                            }, new Response.ErrorListener() {
+//                                @Override
+//                                public void onErrorResponse(VolleyError error) {
+//                                    Log.e("TAG", "Error: " + error.getMessage());
+//                                    Toast.makeText(context, error.getMessage(), Toast.LENGTH_LONG).show();
+//                                }
+//                            }) {
+//                                @Override
+//                                protected Map<String, String> getParams() throws AuthFailureError {
+//                                    Map<String, String> map = new HashMap<String, String>();
+//                                    map.put("nik", data.getNikAn());
+//                                    return map;
+//                                }
+//                            };
 //
-////        holder.am = data;
+//                            Intent refresh = new Intent(context, AnakFragment.class);
+//                            context.startActivity(refresh);
+//                            AppController.getInstance().addToRequestQueue(stringRequest);
+//
+//                        }
+//
+//                        else if (dialogItem[which].equals("Batal")){
+//                            dialog.dismiss();
+//                        }
+//
+//                    }
+//                });
+//                builder.show();
+//            }
+//        });
+
+        holder.am = data;
     }
 
     @Override
@@ -241,7 +241,7 @@ public class AnakAdapter extends RecyclerView.Adapter<AnakAdapter.ViewHolder> {
 
         TextView tvNik, tvNama, tvTempat, tvTgl, tvPend, tvPek, tvHub;
         AnakModel am;
-     //   CardView cardView;
+        CardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -252,7 +252,7 @@ public class AnakAdapter extends RecyclerView.Adapter<AnakAdapter.ViewHolder> {
             tvPend = itemView.findViewById(R.id.detail_pend_anak);
             tvPek = itemView.findViewById(R.id.detail_pekerjaan_anak);
             tvHub = itemView.findViewById(R.id.detail_hub_anak);
-           // cardView = itemView.findViewById(R.id.card_view_anak);
+            //cardView = itemView.findViewById(R.id.card_view_anak);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

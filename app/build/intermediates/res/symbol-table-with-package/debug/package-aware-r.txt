@@ -2081,7 +2081,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
-id fotoProfile
+id fotoProfile1
 id frame_layout
 id ghost_view
 id give_us_a_review_landmine_button

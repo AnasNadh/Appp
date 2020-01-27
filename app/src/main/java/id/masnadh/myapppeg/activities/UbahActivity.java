@@ -81,7 +81,7 @@ public class UbahActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white));
         setSupportActionBar(toolbar);
 
-        dateFormat = new SimpleDateFormat("dd-MM-yy", Locale.US);
+        dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         getSupportActionBar().setTitle("Ubah Data Pegawai");
 
         updateData = (Button)  findViewById(R.id.updateBtn);

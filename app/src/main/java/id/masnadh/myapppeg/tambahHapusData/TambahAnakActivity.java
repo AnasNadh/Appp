@@ -63,7 +63,7 @@ public class TambahAnakActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_anak);
 
-        dateFormat = new SimpleDateFormat("dd-MM-yy", Locale.US);
+        dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
         Intent data = getIntent();
         final int update = data.getIntExtra("update",0);
@@ -316,8 +316,8 @@ public class TambahAnakActivity extends AppCompatActivity {
                         if(session) {
                         Intent sukses = new Intent(TambahAnakActivity.this, DataActivity.class);
                             sukses.putExtra(TAG_ID, id);
+                            startActivity(sukses);
                             finish();
-                        startActivity(sukses);
                         }
                     }
                 });
@@ -353,5 +353,10 @@ public class TambahAnakActivity extends AppCompatActivity {
             }
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH),newCalendar.get(Calendar.DAY_OF_MONTH));
         datePickerDialog.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
