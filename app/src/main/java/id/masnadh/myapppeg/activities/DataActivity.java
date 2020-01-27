@@ -12,16 +12,26 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.tabs.TabLayout;
 
 import id.masnadh.myapppeg.MainActivity;
@@ -30,10 +40,14 @@ import id.masnadh.myapppeg.connections.Server;
 import id.masnadh.myapppeg.fragments.HomeFragment;
 
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Request;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DataActivity extends AppCompatActivity  {
 
@@ -70,7 +84,9 @@ public class DataActivity extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
 
-//        fotoPeg = (ImageView) findViewById(R.id.fotoProfile1);
+        ambilfoto();
+
+        fotoPeg = (ImageView) findViewById(R.id.fotoProfile1);
 //        progressDialog = new ProgressDialog(DataActivity.this);
 //        progressDialog.setMessage("Proses Pengambilan Data, Mohon Tunggu...");
 //        progressDialog.show();
@@ -522,6 +538,73 @@ public class DataActivity extends AppCompatActivity  {
 //////
 //////    }
     }
+
+    private void ambilfoto()
+    {
+        progressDialog = new ProgressDialog(DataActivity.this);
+        progressDialog.setMessage("Proses Pengambilan Data, Mohon Tunggu...");
+        progressDialog.show();
+
+
+
+        StringRequest request = new StringRequest(Request.Method.GET, ambilfoto, new Response.Listener<String>(){
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray dataArray= new JSONArray(response);
+                    progressDialog.dismiss();
+                    for (int i =0; i<dataArray.length(); i++) {
+
+                        JSONObject obj = dataArray.getJSONObject(i);
+                        int extraId = Integer.parseInt(getIntent().getStringExtra(TAG_ID));
+
+                        int id = obj.getInt("id_peg");
+                        if (extraId == id) {
+                            String fotobase64 = obj.getString("foto");
+                            byte[] decodedString = Base64.decode(fotobase64, Base64.DEFAULT);
+                            Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+
+                            if (extraId== id ) {
+
+                                if (fotobase64.isEmpty()) {
+
+                                    Picasso.with(getApplication()).load("http://smknprigen.sch.id/bkk/image/default.png").into(fotoPeg);
+                                } else if (fotobase64.equals("null")) {
+
+                                    Picasso.with(getApplication()).load("http://smknprigen.sch.id/bkk/image/default.png").into(fotoPeg);
+                                } else {
+
+                                    fotoPeg.setImageBitmap(decodedByte);
+                                }
+                            }
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Error: " + error.getMessage());
+                Toast.makeText(DataActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }) {
+            //adding parameters to send
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> parameters = new HashMap<String, String>();
+
+                return parameters;
+            }
+        };
+
+        RequestQueue rQueue = Volley.newRequestQueue(DataActivity.this);
+        rQueue.add(request);
+    }
+
 
 //    @Override
 //    public void onBackPressed() {
